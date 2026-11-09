@@ -1,0 +1,144 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "black SUV in the right adjacent lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "white minivan in the right adjacent lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "black sedan on the left road edge",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "white pedestrian crossing sign on the right",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign on the left",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white pedestrian crossing sign in the distance",
+      "category": "traffic_sign"

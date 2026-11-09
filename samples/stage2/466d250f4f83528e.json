@@ -1,0 +1,220 @@
+{
+  "token": "466d250f4f83528e",
+  "cache_version": "279a2701edebb8400b3d90978d52d1b49a43fb5e39f1e2753051312acfdcd7a4",
+  "input_hash": "b03385cc9495fe01405c748199ce7690754ea39ad67c9d1c8d859c02fe0d9638",
+  "rule_status": "needs_review",
+  "scene_text": {
+    "cam_f0": {
+      "text": "white van partially visible on the left edge, black bollard positioned near the left curb, sign indicating Diamond Seven Star Taxi & Limos and Self Parking, curved road edge separating the driving lane from the landscaped median",
+      "categories": [
+        "vehicle",
+        "barrier",
+        "traffic_sign",
+        "other"
+      ]
+    },
+    "cam_b0": {
+      "text": "curved asphalt road surface with visible lane markings",
+      "categories": [
+        "other"
+      ]
+    },
+    "cam_l0": {
+      "text": "large white recreational vehicle with desert mural graphics occupying the immediate foreground, black bollard standing on the right side of the road edge",
+      "categories": [
+        "vehicle",
+        "barrier"
+      ]
+    },
+    "cam_r0": {
+      "text": "curved asphalt road edge with visible lane markings",
+      "categories": [
+        "other"
+      ]
+    }
+  },
+  "audit": {
+    "cam_f0": {
+      "text": "white van partially visible on the left edge, black bollard positioned near the left curb, sign indicating Diamond Seven Star Taxi & Limos and Self Parking, curved road edge separating the driving lane from the landscaped median",
+      "categories": [
+        "vehicle",
+        "barrier",
+        "traffic_sign",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "white van partially visible on the left edge",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "black bollard positioned near the left curb",
+          "category": "barrier"
+        },
+        {
+          "phrase": "sign indicating Diamond Seven Star Taxi & Limos and Self Parking",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "curved road edge separating the driving lane from the landscaped median",
+          "category": "other"
+        }
+      ],
+      "token_count": 46,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white van partially visible on the left edge\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black bollard positioned near the left curb\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"sign indicating Diamond Seven Star Taxi & Limos and Self Parking\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"curved road edge separating the driving lane from the landscaped median\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white van partially visible on the left edge\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black bollard positioned near the left curb\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"sign indicating Diamond Seven Star Taxi & Limos and Self Parking\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"curved road edge separating the driving lane from the landscaped median\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 149,
+          "seconds": 4.68096370999956,
+          "question": "You are looking at the front camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_F0/caa3970c4ffe5edf.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_b0": {
+      "text": "curved asphalt road surface with visible lane markings",
+      "categories": [
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "curved asphalt road surface with visible lane markings",
+          "category": "other"
+        }
+      ],
+      "token_count": 11,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\"objects\": [{\"phrase\": \"curved asphalt road surface with visible lane markings\", \"category\": \"other\"}]}\n```",
+          "raw_text": "</think>\n\n```json\n{\"objects\": [{\"phrase\": \"curved asphalt road surface with visible lane markings\", \"category\": \"other\"}]}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 34,
+          "seconds": 1.3509524529999908,
+          "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_B0/c904a7c62fb25a79.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_l0": {
+      "text": "large white recreational vehicle with desert mural graphics occupying the immediate foreground, black bollard standing on the right side of the road edge",
+      "categories": [
+        "vehicle",
+        "barrier"
+      ],
+      "objects": [
+        {
+          "phrase": "large white recreational vehicle with desert mural graphics occupying the immediate foreground",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "black bollard standing on the right side of the road edge",
+          "category": "barrier"
+        }
+      ],
+      "token_count": 28,
+      "removed": [
+        {
+          "phrase": "white van parked adjacent to the recreational vehicle",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"large white recreational vehicle with desert mural graphics occupying the immediate foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white van parked adjacent to the recreational vehicle\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black bollard standing on the right side of the road edge\",\n      \"category\": \"barrier\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"large white recreational vehicle with desert mural graphics occupying the immediate foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white van parked adjacent to the recreational vehicle\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black bollard standing on the right side of the road edge\",\n      \"category\": \"barrier\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 118,
+          "seconds": 3.726833444001386,
+          "question": "You are looking at the front-left camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_L0/16777dc10334534a.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_r0": {
+      "text": "curved asphalt road edge with visible lane markings",
+      "categories": [
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "curved asphalt road edge with visible lane markings",
+          "category": "other"
+        }
+      ],
+      "token_count": 11,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\"objects\": [{\"phrase\": \"curved asphalt road edge with visible lane markings\", \"category\": \"other\"}]}\n```",
+          "raw_text": "</think>\n\n```json\n{\"objects\": [{\"phrase\": \"curved asphalt road edge with visible lane markings\", \"category\": \"other\"}]}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 34,
+          "seconds": 1.411798559998715,
+          "question": "You are looking at the front-right camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_R0/9194a6dec6ff511c.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    }
+  }
+}

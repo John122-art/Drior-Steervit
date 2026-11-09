@@ -1,0 +1,542 @@
+[
+  {
+    "group": "stage2",
+    "scene_token": "a29d28434cb05060",
+    "camera": "cam_f0",
+    "attempt_index": 0,
+    "kind": "json_syntax_error",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0003/captions/scenes/a29d28434cb05060.json",
+    "source_sha256": "8026966e4607fb6e6268e57b4eb2fd84ebdaf588ecaa5955193ef17c97cbde22",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white minivan in the center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black sedan in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"orange sedan on the far left\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"green traffic lights at the intersection\",\n      \"category\": \"traffic_light\"\n    },\n    \"other\": [\n      \"multi-lane road\",\n      \"lane markings\"\n    ]\n  ]\n}\n```",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white minivan in the center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black sedan in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"orange sedan on the far left\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"green traffic lights at the intersection\",\n      \"category\": \"traffic_light\"\n    },\n    \"other\": [\n      \"multi-lane road\",\n      \"lane markings\"\n    ]\n  ]\n}\n```",
+      "finish_reason": "eos",
+      "generated_tokens": 155,
+      "seconds": 4.993384807999973,
+      "question": "You are looking at the front camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.14.58.13_veh-35_02037_04783/CAM_F0/dba07c333b675590.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": "Expecting ',' delimiter: line 19 column 12 (char 406)"
+    },
+    "raw_output_file": "raw_outputs/01_stage2_a29d28434cb05060_cam_f0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "6050573fbd115c89",
+    "camera": "cam_f0",
+    "attempt_index": 0,
+    "kind": "vlm_empty_list",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/6050573fbd115c89.json",
+    "source_sha256": "583d8bd910cdaed8b98cd38522efe333b15ccb76c290117840c463b5f33292e9",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+      "answer": "```json\n{\"objects\": []}\n```",
+      "generated_tokens": 15,
+      "seconds": 0.8244702569973015,
+      "finish_reason": "eos",
+      "question": "You are looking at the front camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.10.11.07.47.13_veh-50_00326_00708/CAM_F0/fbec99bb91e55742.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/02_stage1_6050573fbd115c89_cam_f0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "4c26ce4489c05fb5",
+    "camera": "cam_f0",
+    "attempt_index": 0,
+    "kind": "nonempty_json",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0003/captions/scenes/4c26ce4489c05fb5.json",
+    "source_sha256": "2da7d6bfe9ebf2a89aa2c5c7b3a5fd11af8875084c46c883244169bde9975403",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a silver SUV in the center of the image\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a silver SUV in the center of the image\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "generated_tokens": 52,
+      "seconds": 1.8556574900139822,
+      "finish_reason": "eos",
+      "question": "You are looking at the front camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.14.54.32_veh-16_01187_03336/CAM_F0/136ab0f317d753c9.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/03_stage1_4c26ce4489c05fb5_cam_f0.txt"
+  },
+  {
+    "group": "stage2",
+    "scene_token": "871d03ac0da756dc",
+    "camera": "cam_f0",
+    "attempt_index": 0,
+    "kind": "nonempty_json",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0003/captions/scenes/871d03ac0da756dc.json",
+    "source_sha256": "886ad5cbd9c95ff261482a63f2daec391c6b976e25bf5f43c3fe00fa27a1a34a",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"dark blue sedan positioned in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"traffic light assembly suspended over the intersection\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"white dashed lane markings defining the road geometry\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"orange diamond-shaped warning sign on the median\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white sedan visible in the distance on the left\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"dark blue sedan positioned in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"traffic light assembly suspended over the intersection\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"white dashed lane markings defining the road geometry\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"orange diamond-shaped warning sign on the median\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white sedan visible in the distance on the left\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "finish_reason": "eos",
+      "generated_tokens": 169,
+      "seconds": 5.012363941999865,
+      "question": "You are looking at the front camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.14.54.32_veh-16_00636_00840/CAM_F0/fb50b48a013d562a.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/04_stage2_871d03ac0da756dc_cam_f0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "cd9c0459443152dc",
+    "camera": "cam_f0",
+    "attempt_index": 0,
+    "kind": "json_syntax_error",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0007/captions/scenes/cd9c0459443152dc.json",
+    "source_sha256": "c099a9be00fca94c864ba2f46bfd45ada7538ef2ee5823da93c0914d39d6d82b",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a white SUV in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a silver SUV in the right lane\",\n      \"concrete barrier along the left side of the road\"\n    },\n    {\n      \"category\": \"barrier\"\n    }\n  ]\n}\n```",
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a white SUV in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a silver SUV in the right lane\",\n      \"concrete barrier along the left side of the road\"\n    },\n    {\n      \"category\": \"barrier\"\n    }\n  ]\n}\n```",
+      "generated_tokens": 99,
+      "seconds": 3.3033426300025894,
+      "finish_reason": "eos",
+      "question": "You are looking at the front camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.20.00.35_veh-35_00960_03649/CAM_F0/17393d7e11bf5411.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": "Expecting ':' delimiter: line 10 column 5 (char 223)"
+    },
+    "raw_output_file": "raw_outputs/05_stage1_cd9c0459443152dc_cam_f0.txt"
+  },
+  {
+    "group": "stage2",
+    "scene_token": "30bcc8649ef55680",
+    "camera": "cam_b0",
+    "attempt_index": 0,
+    "kind": "truncated",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0001/captions/scenes/30bcc8649ef55680.json",
+    "source_sha256": "f7566b162e5928a095012ba54b3581dffa0b00faba6f48ab85c1dfab0b2c8e5b",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"black SUV in the right adjacent lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white minivan in the right adjacent lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black sedan on the left road edge\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign on the right\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign on the left\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"black SUV in the right adjacent lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white minivan in the right adjacent lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black sedan on the left road edge\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign on the right\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign on the left\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white pedestrian crossing sign in the distance\",\n      \"category\": \"traffic_sign\"",
+      "finish_reason": "length",
+      "generated_tokens": 1024,
+      "seconds": 29.690794963999906,
+      "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.18.42.45_veh-12_04233_04472/CAM_B0/505a867a98105d0e.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": "generation_truncated"
+    },
+    "raw_output_file": "raw_outputs/06_stage2_30bcc8649ef55680_cam_b0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "f0a8525b39f154ee",
+    "camera": "cam_b0",
+    "attempt_index": 0,
+    "kind": "vlm_empty_list",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0004/captions/scenes/f0a8525b39f154ee.json",
+    "source_sha256": "91bcb45d0d2efcd0e75b73a22f5daba3f5af3f9b96cf30c00e058cd44c59d7bb",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+      "answer": "```json\n{\"objects\": []}\n```",
+      "generated_tokens": 15,
+      "seconds": 0.7536047969770152,
+      "finish_reason": "eos",
+      "question": "You are looking at the rear camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.08.17.13.10.50_veh-08_00726_01027/CAM_B0/4b56e26eecc75232.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/07_stage1_f0a8525b39f154ee_cam_b0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "96ba994e5f925c78",
+    "camera": "cam_b0",
+    "attempt_index": 0,
+    "kind": "nonempty_json",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/96ba994e5f925c78.json",
+    "source_sha256": "a0034aee29bc0ae53725803d1b8616e650e141f280d574c51cab9c4d4268a200",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a white van with orange markings on the left\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a dark SUV driving in the center lane\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a white van with orange markings on the left\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a dark SUV driving in the center lane\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "generated_tokens": 81,
+      "seconds": 2.6736285789957037,
+      "finish_reason": "eos",
+      "question": "You are looking at the rear camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_02861_03037/CAM_B0/10999530f86c50ae.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/08_stage1_96ba994e5f925c78_cam_b0.txt"
+  },
+  {
+    "group": "stage2",
+    "scene_token": "eecf653c1c155233",
+    "camera": "cam_b0",
+    "attempt_index": 0,
+    "kind": "nonempty_json",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0000/captions/scenes/eecf653c1c155233.json",
+    "source_sha256": "67383cab1ecac304be762a5d3444cbddfd1d49f4c6c96d1e73bf4dcc55f857f2",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"yellow chevron sign indicating a sharp left curve\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"double solid white lines marking the left edge of the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"curved asphalt road surface\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"concrete curb separating the road from the grassy verge\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"modern multi-story building with white facade and greenery\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"small orange fire hydrant on the grass verge\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"yellow chevron sign indicating a sharp left curve\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"double solid white lines marking the left edge of the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"curved asphalt road surface\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"concrete curb separating the road from the grassy verge\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"modern multi-story building with white facade and greenery\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"small orange fire hydrant on the grass verge\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+      "finish_reason": "eos",
+      "generated_tokens": 204,
+      "seconds": 6.01251326000056,
+      "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [TURN RIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.10.11.07.47.13_veh-50_00736_00843/CAM_B0/f2c780b5870e5783.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/09_stage2_eecf653c1c155233_cam_b0.txt"
+  },
+  {
+    "group": "stage2",
+    "scene_token": "6ee2e674229c55fc",
+    "camera": "cam_b0",
+    "attempt_index": 0,
+    "kind": "truncated",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0002/captions/scenes/6ee2e674229c55fc.json",
+    "source_sha256": "3a0643574df4973b916d14b112e16d34582cf1715ea6e651cee87d1c00160613",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white box truck in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant white vehicle in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant white vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white box truck in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant white vehicle in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant white vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far center lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant dark vehicle in the far left lane\",\n      \"category\": \"",
+      "finish_reason": "length",
+      "generated_tokens": 1024,
+      "seconds": 28.846470639000472,
+      "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.17.37.09_veh-12_04489_04816/CAM_B0/3bd78e86b5985ade.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": "generation_truncated"
+    },
+    "raw_output_file": "raw_outputs/10_stage2_6ee2e674229c55fc_cam_b0.txt"
+  },
+  {
+    "group": "stage2",
+    "scene_token": "ae8e628823a7577e",
+    "camera": "cam_l0",
+    "attempt_index": 0,
+    "kind": "json_syntax_error",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0002/captions/scenes/ae8e628823a7577e.json",
+    "source_sha256": "25bf5ea8b3e8b7d49d4ce04713c7de61107960c470ff411a56fbfd881fb98698",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"silver SUV on the right edge of the frame\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white sedan in the adjacent lane to the right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"group of pedestrians standing on the crosswalk\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"black bollards lining the edge of the crosswalk\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"traffic lights mounted on the overhead gantry\",\n      \"category\": \"traffic_light\"\n    },\n    \"phrase\": \"white and black striped road markings on the pavement\",\n    \"category\": \"other\"\n  ]\n}\n```",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"silver SUV on the right edge of the frame\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white sedan in the adjacent lane to the right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"group of pedestrians standing on the crosswalk\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"black bollards lining the edge of the crosswalk\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"traffic lights mounted on the overhead gantry\",\n      \"category\": \"traffic_light\"\n    },\n    \"phrase\": \"white and black striped road markings on the pavement\",\n    \"category\": \"other\"\n  ]\n}\n```",
+      "finish_reason": "eos",
+      "generated_tokens": 199,
+      "seconds": 6.136568915000225,
+      "question": "You are looking at the front-left camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.21.56.29_veh-35_00947_01581/CAM_L0/beb359f3621f5ed2.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": "Expecting ',' delimiter: line 23 column 13 (char 567)"
+    },
+    "raw_output_file": "raw_outputs/11_stage2_ae8e628823a7577e_cam_l0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "9c27789ab7005670",
+    "camera": "cam_l0",
+    "attempt_index": 0,
+    "kind": "vlm_empty_list",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0003/captions/scenes/9c27789ab7005670.json",
+    "source_sha256": "e8dc6620961bf2e3d7fd21556bc48e737fd678036b8c707abf6dc26b51cfef61",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+      "answer": "```json\n{\"objects\": []}\n```",
+      "generated_tokens": 15,
+      "seconds": 0.7902049179974711,
+      "finish_reason": "eos",
+      "question": "You are looking at the front-left camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.05.12.23.36.44_veh-35_01735_01957/CAM_L0/21871410d7b95981.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/12_stage1_9c27789ab7005670_cam_l0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "25ddc682e81a5d12",
+    "camera": "cam_l0",
+    "attempt_index": 0,
+    "kind": "nonempty_json",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0005/captions/scenes/25ddc682e81a5d12.json",
+    "source_sha256": "84d5a5274708c2d37d81cfd76cd9e5ce510ef0f91d69e908257a9c2eb6ed6e4f",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a silver sedan in the foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a silver SUV on the right\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a silver sedan in the foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a silver SUV on the right\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "generated_tokens": 76,
+      "seconds": 2.5299679580002703,
+      "finish_reason": "eos",
+      "question": "You are looking at the front-left camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_L0/17cf5f41da515fce.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/13_stage1_25ddc682e81a5d12_cam_l0.txt"
+  },
+  {
+    "group": "stage2",
+    "scene_token": "4c53f334616c5334",
+    "camera": "cam_l0",
+    "attempt_index": 0,
+    "kind": "nonempty_json",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0006/captions/scenes/4c53f334616c5334.json",
+    "source_sha256": "87c760f346c64b528b4580002e4a26c5cc7319a99f29993093595fb8f379d971",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white box truck positioned on the right side of the road\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"dark SUV and blue sedan visible on the left side of the intersection\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"traffic light assembly mounted on a pole at the intersection\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"no U-turn regulatory sign located near the center median\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"curved curb and landscaped median separating the road sections\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white box truck positioned on the right side of the road\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"dark SUV and blue sedan visible on the left side of the intersection\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"traffic light assembly mounted on a pole at the intersection\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"no U-turn regulatory sign located near the center median\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"curved curb and landscaped median separating the road sections\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+      "finish_reason": "eos",
+      "generated_tokens": 184,
+      "seconds": 5.249435376999827,
+      "question": "You are looking at the front-left camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_03836_05047/CAM_L0/472157f9b0c15534.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/14_stage2_4c53f334616c5334_cam_l0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "eed691d90a865bdc",
+    "camera": "cam_l0",
+    "attempt_index": 0,
+    "kind": "vlm_empty_list",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0002/captions/scenes/eed691d90a865bdc.json",
+    "source_sha256": "6ec7b1e8c247503648e42ce44ac46c38b6d5724a4857383e39a75284b302bf24",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+      "answer": "```json\n{\"objects\": []}\n```",
+      "generated_tokens": 15,
+      "seconds": 0.7818410219915677,
+      "finish_reason": "eos",
+      "question": "You are looking at the front-left camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.10.11.08.31.07_veh-50_02146_02283/CAM_L0/92d83e3a89e953ea.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/15_stage1_eed691d90a865bdc_cam_l0.txt"
+  },
+  {
+    "group": "stage2",
+    "scene_token": "c20ea7963b6b5264",
+    "camera": "cam_r0",
+    "attempt_index": 0,
+    "kind": "json_syntax_error",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0002/captions/scenes/c20ea7963b6b5264.json",
+    "source_sha256": "1bfb18031f586d02f8ddb7aec91ad31de855f6ee3e0f309989e2cef7e3667400",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"dark pickup truck driving in the lane ahead\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"concrete barrier lining the right side of the road\",\n      \"category\": \"barrier\"\n    },\n    pedestrian overpass spanning the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"traffic light on the left pole\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"yield sign on the left side of the road\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white semi-truck with Pepsi trailer\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white SUV in the distance on the left\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"dark pickup truck driving in the lane ahead\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"concrete barrier lining the right side of the road\",\n      \"category\": \"barrier\"\n    },\n    pedestrian overpass spanning the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"traffic light on the left pole\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"yield sign on the left side of the road\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white semi-truck with Pepsi trailer\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white SUV in the distance on the left\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+      "finish_reason": "eos",
+      "generated_tokens": 219,
+      "seconds": 6.592052003999925,
+      "question": "You are looking at the front-right camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_R0/35d2de9a4b565f8c.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": "Expecting value: line 11 column 5 (char 236)"
+    },
+    "raw_output_file": "raw_outputs/16_stage2_c20ea7963b6b5264_cam_r0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "d82afbd4ff1b5d0a",
+    "camera": "cam_r0",
+    "attempt_index": 0,
+    "kind": "vlm_empty_list",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0004/captions/scenes/d82afbd4ff1b5d0a.json",
+    "source_sha256": "ed3681b2c362e48987ab99180f4400151e4e085c24436aaf0a5c665d53a00e19",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+      "answer": "```json\n{\"objects\": []}\n```",
+      "generated_tokens": 15,
+      "seconds": 0.7532019869977375,
+      "finish_reason": "eos",
+      "question": "You are looking at the front-right camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.09.15.14.50.05_veh-28_00578_00896/CAM_R0/6af727ed1dbc5c1b.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/17_stage1_d82afbd4ff1b5d0a_cam_r0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "7baf8ad55e9e5c84",
+    "camera": "cam_r0",
+    "attempt_index": 0,
+    "kind": "nonempty_json",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0004/captions/scenes/7baf8ad55e9e5c84.json",
+    "source_sha256": "58c8c7d99b00644a754ee2fd3bd212b0440a4ca62039900cf9e3a6fcda669344",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\"objects\": [{\"phrase\": \"a bicycle in the center of the image\", \"category\": \"bicycle\"}]}\n```",
+      "answer": "```json\n{\"objects\": [{\"phrase\": \"a bicycle in the center of the image\", \"category\": \"bicycle\"}]}\n```",
+      "generated_tokens": 34,
+      "seconds": 1.300296300003538,
+      "finish_reason": "eos",
+      "question": "You are looking at the front-right camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.10.06.19.27.33_veh-28_00805_01736/CAM_R0/add3a1be7b925184.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/18_stage1_7baf8ad55e9e5c84_cam_r0.txt"
+  },
+  {
+    "group": "stage2",
+    "scene_token": "a9da6b8c45955491",
+    "camera": "cam_r0",
+    "attempt_index": 0,
+    "kind": "nonempty_json",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train/shards/rank_0006/captions/scenes/a9da6b8c45955491.json",
+    "source_sha256": "647816c6a226fdb2986608b6eeb98a72ba45d1fe6b22e0b0a32ab070a921988f",
+    "call": {
+      "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white sedan positioned on the left side of the road\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black bollards lining the edge of the driving lane\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"pedestrians standing near the building facade and railing\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"red triangular yield sign visible on the far left\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white lane marking line separating the driving path\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+      "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white sedan positioned on the left side of the road\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black bollards lining the edge of the driving lane\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"pedestrians standing near the building facade and railing\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"red triangular yield sign visible on the far left\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white lane marking line separating the driving path\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+      "finish_reason": "eos",
+      "generated_tokens": 178,
+      "seconds": 5.231272875000286,
+      "question": "You are looking at the front-right camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_03836_05047/CAM_R0/f5d85947d7665e7e.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/19_stage2_a9da6b8c45955491_cam_r0.txt"
+  },
+  {
+    "group": "stage1",
+    "scene_token": "0d913315bd4858d6",
+    "camera": "cam_r0",
+    "attempt_index": 0,
+    "kind": "vlm_empty_list",
+    "source_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/0d913315bd4858d6.json",
+    "source_sha256": "bb5e6e8418a170700befc1f5ed490b65069f1a6b91223bd5e0d813d3df860c45",
+    "call": {
+      "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+      "answer": "```json\n{\"objects\": []}\n```",
+      "generated_tokens": 15,
+      "seconds": 0.8430896649988426,
+      "finish_reason": "eos",
+      "question": "You are looking at the front-right camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+      "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.05.12.22.28.35_veh-35_02138_02481/CAM_R0/c22468bedc1e5075.jpg",
+      "image_grid_thw": [
+        [
+          1,
+          44,
+          80
+        ]
+      ],
+      "error": null
+    },
+    "raw_output_file": "raw_outputs/20_stage1_0d913315bd4858d6_cam_r0.txt"
+  }
+]

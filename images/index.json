@@ -1,0 +1,637 @@
+[
+  {
+    "group": "stage1",
+    "token": "5789135b9e6e5226",
+    "file": "images/stage1_5789135b9e6e5226.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.16.52.00_veh-26_01043_03099/CAM_F0/0a3b1476edfc5f35.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.16.52.00_veh-26_01043_03099/CAM_B0/ace370d2327a522c.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.16.52.00_veh-26_01043_03099/CAM_L0/2652d29cba95559a.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.16.52.00_veh-26_01043_03099/CAM_R0/fa11420a6aa35eb3.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "a pedestrian in dark clothing on the right, a pedestrian in dark clothing on the far right",
+        "categories": [
+          "pedestrian",
+          "pedestrian"
+        ]
+      },
+      "cam_b0": {
+        "text": "a dark vehicle on the far right",
+        "categories": [
+          "vehicle"
+        ]
+      },
+      "cam_l0": {
+        "text": "",
+        "categories": []
+      },
+      "cam_r0": {
+        "text": "a pedestrian in dark clothing on the left, a pedestrian in a black dress on the left, a black car in the background",
+        "categories": [
+          "pedestrian",
+          "pedestrian",
+          "vehicle"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage1",
+    "token": "df77cf12116e55d2",
+    "file": "images/stage1_df77cf12116e55d2.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.00.51.05_veh-17_03264_05261/CAM_F0/8fb5f08ef41e5281.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.00.51.05_veh-17_03264_05261/CAM_B0/829ef354693c5288.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.00.51.05_veh-17_03264_05261/CAM_L0/76e36b9628c85002.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.00.51.05_veh-17_03264_05261/CAM_R0/3d5be4fbb3475d9d.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "a dark sedan in the left lane, a white sedan in the center lane, a dark SUV in the left lane, a dark vehicle on the far left",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle"
+        ]
+      },
+      "cam_b0": {
+        "text": "a silver SUV on the right side of the image, a dark sedan in the center of the image, a black SUV on the right side of the image, a pedestrian in an orange shirt on the left, a group of pedestrians on the left sidewalk",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "pedestrian",
+          "pedestrian"
+        ]
+      },
+      "cam_l0": {
+        "text": "a green sports car in the foreground, a white car behind the fence, a yellow taxi behind the fence, a dark SUV behind the fence",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle"
+        ]
+      },
+      "cam_r0": {
+        "text": "a pedestrian in a blue shirt near the center, a pedestrian in dark clothing to the right of the blue shirt person, a pedestrian in an orange shirt on the right, a pedestrian in a white shirt on the far right, a pedestrian in dark clothing in the background",
+        "categories": [
+          "pedestrian",
+          "pedestrian",
+          "pedestrian",
+          "pedestrian",
+          "pedestrian"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage1",
+    "token": "2932d5ef3aed515b",
+    "file": "images/stage1_2932d5ef3aed515b.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.17.26.26_veh-38_01860_02729/CAM_F0/f66c0d8775465bdf.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.17.26.26_veh-38_01860_02729/CAM_B0/3a6260b7c60c520f.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.17.26.26_veh-38_01860_02729/CAM_L0/f3b852a8a01e50de.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.17.26.26_veh-38_01860_02729/CAM_R0/9cca414767d1558b.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "a grey sedan on the left side of the image, a black SUV on the right side of the image",
+        "categories": [
+          "vehicle",
+          "vehicle"
+        ]
+      },
+      "cam_b0": {
+        "text": "a dark SUV in the center of the image, a black SUV on the right of the image, a silver SUV on the left of the image, a dark sedan on the far left of the image, a dark vehicle behind the central SUV",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle"
+        ]
+      },
+      "cam_l0": {
+        "text": "a dark car on the far right",
+        "categories": [
+          "vehicle"
+        ]
+      },
+      "cam_r0": {
+        "text": "a dark grey SUV in the parking lot, a black SUV on the right, a silver sedan on the right, a dark sedan on the left",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage1",
+    "token": "649ab25cb5fe57ab",
+    "file": "images/stage1_649ab25cb5fe57ab.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.20.26.11_veh-35_00970_01216/CAM_F0/ffef31746c655f76.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.20.26.11_veh-35_00970_01216/CAM_B0/307265038b825484.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.20.26.11_veh-35_00970_01216/CAM_L0/f02f8fb5cb695215.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.20.26.11_veh-35_00970_01216/CAM_R0/42521fcfdf115b02.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "a black SUV in the left lane, a white van in the center lane, a black car in the right lane, a pedestrian in blue clothing on the right",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "pedestrian"
+        ]
+      },
+      "cam_b0": {
+        "text": "a black SUV in the center of the image, a silver sedan on the right side of the image, a white SUV in the background on the right, a white bus on the left side of the image, group of pedestrians on the sidewalk to the left",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "pedestrian"
+        ]
+      },
+      "cam_l0": {
+        "text": "a white SUV in the foreground",
+        "categories": [
+          "vehicle"
+        ]
+      },
+      "cam_r0": {
+        "text": "two pedestrians in white shirts on the right sidewalk, a pedestrian in dark clothing on the far left, black metal barriers along the sidewalk",
+        "categories": [
+          "pedestrian",
+          "pedestrian",
+          "barrier"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage1",
+    "token": "fba9ec706e975639",
+    "file": "images/stage1_fba9ec706e975639.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.00.24.14_veh-38_00367_01154/CAM_F0/30bc89f6486c56c1.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.00.24.14_veh-38_00367_01154/CAM_B0/db5eea15cc185173.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.00.24.14_veh-38_00367_01154/CAM_L0/7c4f884f699559e3.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.00.24.14_veh-38_00367_01154/CAM_R0/5cea2246e64a5bd1.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "a white SUV in the center of the image, a dark vehicle on the left side of the image, a white car on the right side of the image, a dark vehicle in the background on the right",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle"
+        ]
+      },
+      "cam_b0": {
+        "text": "a black SUV on the right side of the image, a white car in the center of the image, a white car to the left of the center vehicle, a dark SUV in the background on the left",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle"
+        ]
+      },
+      "cam_l0": {
+        "text": "",
+        "categories": []
+      },
+      "cam_r0": {
+        "text": "a silver SUV in the background on the left",
+        "categories": [
+          "vehicle"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage2",
+    "token": "466d250f4f83528e",
+    "file": "images/stage2_466d250f4f83528e.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_F0/caa3970c4ffe5edf.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_B0/c904a7c62fb25a79.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_L0/16777dc10334534a.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.09.17.06.37_veh-35_02609_05015/CAM_R0/9194a6dec6ff511c.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "white van partially visible on the left edge, black bollard positioned near the left curb, sign indicating Diamond Seven Star Taxi & Limos and Self Parking, curved road edge separating the driving lane from the landscaped median",
+        "categories": [
+          "vehicle",
+          "barrier",
+          "traffic_sign",
+          "other"
+        ]
+      },
+      "cam_b0": {
+        "text": "curved asphalt road surface with visible lane markings",
+        "categories": [
+          "other"
+        ]
+      },
+      "cam_l0": {
+        "text": "large white recreational vehicle with desert mural graphics occupying the immediate foreground, black bollard standing on the right side of the road edge",
+        "categories": [
+          "vehicle",
+          "barrier"
+        ]
+      },
+      "cam_r0": {
+        "text": "curved asphalt road edge with visible lane markings",
+        "categories": [
+          "other"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage2",
+    "token": "83f50b5234195606",
+    "file": "images/stage2_83f50b5234195606.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.16.48.02_veh-12_02317_02401/CAM_F0/ffbf36dea7ed5d41.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.16.48.02_veh-12_02317_02401/CAM_B0/cf9d59a942aa5d8a.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.16.48.02_veh-12_02317_02401/CAM_L0/7092dddab3105078.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.16.48.02_veh-12_02317_02401/CAM_R0/01c87c0ecdbd5bf3.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "silver minivan in the left lane with illuminated brake lights, red stop sign visible in the distance on the left, white dashed lane markings separating traffic lanes, large building with columns and glass windows on the right",
+        "categories": [
+          "vehicle",
+          "traffic_sign",
+          "other",
+          "other"
+        ]
+      },
+      "cam_b0": {
+        "text": "white sedan positioned on the left side near the curb, pedestrian standing with luggage on the right side of the driveway, white vehicle visible in the background on the right, pedestrians visible near the building entrance on the left, concrete pillars and building structure defining the covered driveway area",
+        "categories": [
+          "vehicle",
+          "pedestrian",
+          "vehicle",
+          "pedestrian",
+          "other"
+        ]
+      },
+      "cam_l0": {
+        "text": "orange and white taxi vehicle positioned on the right side of the road, white sedan vehicle located further back in the traffic lane, pedestrian wearing a yellow shirt standing near the left edge of the frame, black bollards positioned along the left and center foreground, red and white traffic sign visible in the distance on the right",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "pedestrian",
+          "other",
+          "traffic_sign"
+        ]
+      },
+      "cam_r0": {
+        "text": "two pedestrians on the sidewalk near the building entrance, red curb marking along the edge of the paved area",
+        "categories": [
+          "pedestrian",
+          "other"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage2",
+    "token": "9716430ebdca58e4",
+    "file": "images/stage2_9716430ebdca58e4.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_F0/0dd641e064685b7f.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_B0/02cfc1689cc7599d.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_L0/dff60e479fda5eb3.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_R0/76ce57941dbf5efd.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "blue box truck in the right lane, white utility vehicle in the left lane, distant traffic lights at the intersection, white painted crosswalk markings on the road surface, concrete curb separating the road from the landscaped median",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "traffic_light",
+          "other",
+          "other"
+        ]
+      },
+      "cam_b0": {
+        "text": "silver sedan in the adjacent right lane, red vehicle in the same lane, yellow pedestrian crossing sign, white dashed lane markings, solid white line marking the right road edge",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "traffic_sign",
+          "other",
+          "other"
+        ]
+      },
+      "cam_l0": {
+        "text": "two pedestrians on the sidewalk to the left, two pedestrians on the sidewalk to the right, white diamond-shaped traffic sign on a pole, blue vertical 'WELCOME' sign on a grassy median, yellow painted curb marking on the road edge",
+        "categories": [
+          "pedestrian",
+          "pedestrian",
+          "traffic_sign",
+          "traffic_sign",
+          "other"
+        ]
+      },
+      "cam_r0": {
+        "text": "red sedan on the right side of the road, three pedestrians on the sidewalk to the right, brown directional sign pointing to Luxor, yellow pedestrian crossing sign, white metal barrier separating the road from the sidewalk, white structural columns supporting an overhead structure",
+        "categories": [
+          "vehicle",
+          "pedestrian",
+          "traffic_sign",
+          "traffic_sign",
+          "barrier",
+          "other"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage2",
+    "token": "f9b1f101f7235fa8",
+    "file": "images/stage2_f9b1f101f7235fa8.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_00016_01515/CAM_F0/6f86135ac7975852.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_00016_01515/CAM_B0/a268d86f64535f32.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_00016_01515/CAM_L0/bba528a880935285.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_00016_01515/CAM_R0/42e2e1384c0058bf.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "white sedan on the left side, white directional sign on the left side of the road, curved road edge and curb on the left",
+        "categories": [
+          "vehicle",
+          "traffic_sign",
+          "other"
+        ]
+      },
+      "cam_b0": {
+        "text": "white taxi sedan with roof advertisement, positioned in the adjacent lane to the right, curved road edge and lane markings defining the right boundary of the driving path",
+        "categories": [
+          "vehicle",
+          "other"
+        ]
+      },
+      "cam_l0": {
+        "text": "white van positioned in the right portion of the curved driveway, curved white lane marking defining the edge of the driving path, chain-link barriers with bollards lining the left side of the road, large building with a glass canopy structure in the background",
+        "categories": [
+          "vehicle",
+          "other",
+          "barrier",
+          "other"
+        ]
+      },
+      "cam_r0": {
+        "text": "curved asphalt road edge with visible curb",
+        "categories": [
+          "other"
+        ]
+      }
+    }
+  },
+  {
+    "group": "stage2",
+    "token": "a06ada6999d15d10",
+    "file": "images/stage2_a06ada6999d15d10.png",
+    "original_dimensions": {
+      "cam_f0": [
+        1920,
+        1080
+      ],
+      "cam_b0": [
+        1920,
+        1080
+      ],
+      "cam_l0": [
+        1920,
+        1080
+      ],
+      "cam_r0": [
+        1920,
+        1080
+      ]
+    },
+    "images": {
+      "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.16.52.00_veh-26_00624_00817/CAM_F0/bd1f087bf9a955f0.jpg",
+      "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.16.52.00_veh-26_00624_00817/CAM_B0/1dde5ef2065a5945.jpg",
+      "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.16.52.00_veh-26_00624_00817/CAM_L0/b7dc826d258e54de.jpg",
+      "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.23.16.52.00_veh-26_00624_00817/CAM_R0/f2490bd1b6f5573d.jpg"
+    },
+    "scene_text": {
+      "cam_f0": {
+        "text": "white pickup truck in the left adjacent lane, black sedan in the center lane, green traffic light at the intersection, white box truck in the distance, concrete curb and landscaped median on the right",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "traffic_light",
+          "vehicle",
+          "barrier"
+        ]
+      },
+      "cam_b0": {
+        "text": "curved concrete barrier lining the left road edge, white sedan traveling in the adjacent left lane, silver SUV traveling in the adjacent left lane, dark SUV traveling in the adjacent left lane, orange and black vehicle traveling in the right lane",
+        "categories": [
+          "barrier",
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle"
+        ]
+      },
+      "cam_l0": {
+        "text": "white pickup truck in the right lane, dark SUV in the right lane, multi-lane road with visible lane markings",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "other"
+        ]
+      },
+      "cam_r0": {
+        "text": "green hedge bordering the right side of the road",
+        "categories": [
+          "other"
+        ]
+      }
+    }
+  }
+]

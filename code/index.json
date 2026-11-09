@@ -1,0 +1,217 @@
+[
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/build_grounding.py",
+    "copy": "code/scripts/data_generation/build_grounding.py",
+    "sha256": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/caption_cache.py",
+    "copy": "code/scripts/data_generation/caption_cache.py",
+    "sha256": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/caption_repair.py",
+    "copy": "code/scripts/data_generation/caption_repair.py",
+    "sha256": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/common.py",
+    "copy": "code/scripts/data_generation/common.py",
+    "sha256": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/generate_captions.py",
+    "copy": "code/scripts/data_generation/generate_captions.py",
+    "sha256": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/geometry.py",
+    "copy": "code/scripts/data_generation/geometry.py",
+    "sha256": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/merge_stage1_shards.py",
+    "copy": "code/scripts/data_generation/merge_stage1_shards.py",
+    "sha256": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/navigation.py",
+    "copy": "code/scripts/data_generation/navigation.py",
+    "sha256": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py",
+    "copy": "code/scripts/data_generation/prepare_navsim.py",
+    "sha256": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/render_2d_boxes.py",
+    "copy": "code/scripts/data_generation/render_2d_boxes.py",
+    "sha256": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/render_caption_preview.py",
+    "copy": "code/scripts/data_generation/render_caption_preview.py",
+    "sha256": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/selection.py",
+    "copy": "code/scripts/data_generation/selection.py",
+    "sha256": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage1_worker.py",
+    "copy": "code/scripts/data_generation/stage1_worker.py",
+    "sha256": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2/check_feature_input.py",
+    "copy": "code/scripts/data_generation/stage2/check_feature_input.py",
+    "sha256": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2/generate.py",
+    "copy": "code/scripts/data_generation/stage2/generate.py",
+    "sha256": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2/merge.py",
+    "copy": "code/scripts/data_generation/stage2/merge.py",
+    "sha256": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2/test_stage2.py",
+    "copy": "code/scripts/data_generation/stage2/test_stage2.py",
+    "sha256": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2/text_policy.py",
+    "copy": "code/scripts/data_generation/stage2/text_policy.py",
+    "sha256": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2/validate.py",
+    "copy": "code/scripts/data_generation/stage2/validate.py",
+    "sha256": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2/worker.py",
+    "copy": "code/scripts/data_generation/stage2/worker.py",
+    "sha256": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/test_data_pipeline.py",
+    "copy": "code/scripts/data_generation/test_data_pipeline.py",
+    "sha256": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/text_processing.py",
+    "copy": "code/scripts/data_generation/text_processing.py",
+    "sha256": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/validate_pilot.py",
+    "copy": "code/scripts/data_generation/validate_pilot.py",
+    "sha256": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/run_data_pilot.sh",
+    "copy": "code/scripts/data_generation/run_data_pilot.sh",
+    "sha256": "791c8aff02bb22d056efb2bfd51d6077c1eeda2d8095a5b9b3b21802ce1eb3f9"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/run_stage1_data_8gpu_dlc.sh",
+    "copy": "code/scripts/data_generation/run_stage1_data_8gpu_dlc.sh",
+    "sha256": "0f4129716a5bb2dfc0abca694db4e504ec903f55f9e6ffb576f43d0dd0c94ed7"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/run_stage2_data_8gpu_dlc.sh",
+    "copy": "code/scripts/data_generation/run_stage2_data_8gpu_dlc.sh",
+    "sha256": "055ccb9e5bfd85ab9862cac4b00de2b7208f95b904c3f63d724bfe0b3b9da9ab"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/scene_navigation_v1.txt",
+    "copy": "code/scripts/data_generation/prompts/scene_navigation_v1.txt",
+    "sha256": "97cc6be01495de602d58e89092d0fc86ccc960e63a3979b12c2aacc545bc7012"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/scene_navigation_v2.txt",
+    "copy": "code/scripts/data_generation/prompts/scene_navigation_v2.txt",
+    "sha256": "8ae2f1199f4617636762bc07f707c722cc0506c40d0138aa7670a10f4468259e"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/scene_path_v1.txt",
+    "copy": "code/scripts/data_generation/prompts/scene_path_v1.txt",
+    "sha256": "ff5b5d9738629e40678d299edfb669ecee10f19df4aa2694a6349885602fff79"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/scene_path_v2.txt",
+    "copy": "code/scripts/data_generation/prompts/scene_path_v2.txt",
+    "sha256": "4af5bfd6e3f67fac1eb7fab079e11de7a99f19f3156f8f6b4e2f73fa7341751f"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/scene_path_v3.txt",
+    "copy": "code/scripts/data_generation/prompts/scene_path_v3.txt",
+    "sha256": "cc506e064ed2e8b7e63c74debe84321351838ec2cdcb30aea8e8561b030b999c"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage1_grounding_v1.txt",
+    "copy": "code/scripts/data_generation/prompts/stage1_grounding_v1.txt",
+    "sha256": "a4c4ecc3f66ad71e8dd53aae30357db1ce4f12593191f62e40d1fde9cc7f3ac6"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/navsim/planning/training/dataset.py",
+    "copy": "code/navsim/planning/training/dataset.py",
+    "sha256": "68cbfa75f2dfc4087eb22b743357145806c62bb0d57b12692ab39b23b24d8831"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/navsim/common/dataclasses.py",
+    "copy": "code/navsim/common/dataclasses.py",
+    "sha256": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/navsim/common/dataloader.py",
+    "copy": "code/navsim/common/dataloader.py",
+    "sha256": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/navsim/agents/drivoR/drivor_features.py",
+    "copy": "code/navsim/agents/drivoR/drivor_features.py",
+    "sha256": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml",
+    "copy": "code/navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml",
+    "sha256": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml",
+    "copy": "code/navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml",
+    "sha256": "61284edf5003c0291f843ce9817c822ba306609a62d54544223adae3fc7fc9cd"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/navsim/planning/script/config/training/default_train_val_test_log_split.yaml",
+    "copy": "code/navsim/planning/script/config/training/default_train_val_test_log_split.yaml",
+    "sha256": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/scene.py",
+    "copy": "code/reference/qwen_scene.py",
+    "sha256": "653519b847f2c1561352752277618a5b3625f24d67434ca0845d2a66c372e8d6"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/images.py",
+    "copy": "code/reference/qwen_images.py",
+    "sha256": "006ac155a799935801906e4dc1d73acf5a144130870029ef94d6dea5937f71e6"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/modeling_qwen_drive.py",
+    "copy": "code/reference/qwen_modeling_qwen_drive.py",
+    "sha256": "dd2dc3bad492f9f53030f66495b2159093d5565a040459fa5308ebe8c812a18c"
+  },
+  {
+    "source": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/navsim/agents/qwen_text/backend.py",
+    "copy": "code/reference/backend.py",
+    "sha256": "4d833dc60e65be2cc2ca9905857a534da818e68693902b59afd8e63cb81600fd"
+  }
+]

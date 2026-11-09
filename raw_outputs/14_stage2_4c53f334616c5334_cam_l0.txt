@@ -1,0 +1,28 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "white box truck positioned on the right side of the road",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "dark SUV and blue sedan visible on the left side of the intersection",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "traffic light assembly mounted on a pole at the intersection",
+      "category": "traffic_light"
+    },
+    {
+      "phrase": "no U-turn regulatory sign located near the center median",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "curved curb and landscaped median separating the road sections",
+      "category": "other"
+    }
+  ]
+}
+```

@@ -1,0 +1,18 @@
+
+
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "a white van with orange markings on the left",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "a dark SUV driving in the center lane",
+      "category": "vehicle"
+    }
+  ]
+}
+```

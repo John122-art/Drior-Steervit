@@ -1,0 +1,182 @@
+{
+  "token": "68694d63ff665ff1",
+  "cache_version": "7c02f47e11ec4cee639d12c64155994d69d97fcdadbbc2ec45330c8981f428d9",
+  "input_hash": "15caf84750bb5ae7f6d3cb3dccea6daaa8c6de8b58f6f3e0ef78ece5c32084d0",
+  "rule_status": "passed",
+  "scene_text": {
+    "cam_f0": {
+      "text": "",
+      "categories": []
+    },
+    "cam_b0": {
+      "text": "",
+      "categories": []
+    },
+    "cam_l0": {
+      "text": "",
+      "categories": []
+    },
+    "cam_r0": {
+      "text": "",
+      "categories": []
+    }
+  },
+  "audit": {
+    "cam_f0": {
+      "text": "",
+      "categories": [],
+      "objects": [],
+      "token_count": 2,
+      "removed": [],
+      "format_normalization": "none",
+      "status": "empty_scene",
+      "attempts": [
+        {
+          "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+          "answer": "```json\n{\"objects\": []}\n```",
+          "generated_tokens": 15,
+          "seconds": 0.7965795899999648,
+          "finish_reason": "eos",
+          "question": "You are looking at the front camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.10.11.07.47.13_veh-50_00736_00843/CAM_F0/8f25e16604cb5219.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "initial_cleaning": {
+        "text": "",
+        "categories": [],
+        "objects": [],
+        "token_count": 2,
+        "removed": [],
+        "format_normalization": "json_fence_removed",
+        "status": "empty_scene"
+      },
+      "repairs": [],
+      "navigation_command": null
+    },
+    "cam_b0": {
+      "text": "",
+      "categories": [],
+      "objects": [],
+      "token_count": 2,
+      "removed": [],
+      "format_normalization": "none",
+      "status": "empty_scene",
+      "attempts": [
+        {
+          "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+          "answer": "```json\n{\"objects\": []}\n```",
+          "generated_tokens": 15,
+          "seconds": 0.8131361249998008,
+          "finish_reason": "eos",
+          "question": "You are looking at the rear camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.10.11.07.47.13_veh-50_00736_00843/CAM_B0/979b77ba80485878.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "initial_cleaning": {
+        "text": "",
+        "categories": [],
+        "objects": [],
+        "token_count": 2,
+        "removed": [],
+        "format_normalization": "json_fence_removed",
+        "status": "empty_scene"
+      },
+      "repairs": [],
+      "navigation_command": null
+    },
+    "cam_l0": {
+      "text": "",
+      "categories": [],
+      "objects": [],
+      "token_count": 2,
+      "removed": [],
+      "format_normalization": "none",
+      "status": "empty_scene",
+      "attempts": [
+        {
+          "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+          "answer": "```json\n{\"objects\": []}\n```",
+          "generated_tokens": 15,
+          "seconds": 0.8144698239993886,
+          "finish_reason": "eos",
+          "question": "You are looking at the front-left camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.10.11.07.47.13_veh-50_00736_00843/CAM_L0/4ee29222d6c85f72.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "initial_cleaning": {
+        "text": "",
+        "categories": [],
+        "objects": [],
+        "token_count": 2,
+        "removed": [],
+        "format_normalization": "json_fence_removed",
+        "status": "empty_scene"
+      },
+      "repairs": [],
+      "navigation_command": null
+    },
+    "cam_r0": {
+      "text": "",
+      "categories": [],
+      "objects": [],
+      "token_count": 2,
+      "removed": [],
+      "format_normalization": "none",
+      "status": "empty_scene",
+      "attempts": [
+        {
+          "raw_text": "\n\n</think>\n\n```json\n{\"objects\": []}\n```",
+          "answer": "```json\n{\"objects\": []}\n```",
+          "generated_tokens": 15,
+          "seconds": 0.8221752219997143,
+          "finish_reason": "eos",
+          "question": "You are looking at the front-right camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.10.11.07.47.13_veh-50_00736_00843/CAM_R0/da39ab1dec1d526e.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "initial_cleaning": {
+        "text": "",
+        "categories": [],
+        "objects": [],
+        "token_count": 2,
+        "removed": [],
+        "format_normalization": "json_fence_removed",
+        "status": "empty_scene"
+      },
+      "repairs": [],
+      "navigation_command": null
+    }
+  }
+}

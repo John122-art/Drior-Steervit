@@ -1,0 +1,370 @@
+[
+  {
+    "schema_version": 3,
+    "camera_order": [
+      "cam_f0",
+      "cam_b0",
+      "cam_l0",
+      "cam_r0"
+    ],
+    "image_size": [
+      1148,
+      672
+    ],
+    "split": "navtrain",
+    "data_split": "trainval",
+    "subset": "train",
+    "seed": 3407,
+    "rank": 0,
+    "world_size": 8,
+    "all_scenes_per_log": true,
+    "selected_log_count": 123,
+    "split_hashes": {
+      "navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f",
+      "navsim/planning/script/config/training/default_train_val_test_log_split.yaml": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    "grid_mask": false,
+    "vlm_input": "one current image; navigation only when explicitly enabled",
+    "navigation_one_hot_order": [
+      "turn left",
+      "go straight",
+      "turn right",
+      "unknown"
+    ],
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "skipped": [],
+    "missing_logs": [],
+    "source_hashes": {
+      "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+      "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+      "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+      "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+      "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+    },
+    "record_count": 12703,
+    "manifest_sha256_actual": "6ff71374c03387560e5ac9aa12eb2f69b18e5edf8b3048dab191384815b31ff7",
+    "metadata_manifest_hash_matches": true
+  },
+  {
+    "schema_version": 3,
+    "camera_order": [
+      "cam_f0",
+      "cam_b0",
+      "cam_l0",
+      "cam_r0"
+    ],
+    "image_size": [
+      1148,
+      672
+    ],
+    "split": "navtrain",
+    "data_split": "trainval",
+    "subset": "train",
+    "seed": 3407,
+    "rank": 1,
+    "world_size": 8,
+    "all_scenes_per_log": true,
+    "selected_log_count": 123,
+    "split_hashes": {
+      "navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f",
+      "navsim/planning/script/config/training/default_train_val_test_log_split.yaml": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    "grid_mask": false,
+    "vlm_input": "one current image; navigation only when explicitly enabled",
+    "navigation_one_hot_order": [
+      "turn left",
+      "go straight",
+      "turn right",
+      "unknown"
+    ],
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "skipped": [],
+    "missing_logs": [],
+    "source_hashes": {
+      "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+      "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+      "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+      "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+      "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+    },
+    "record_count": 11681,
+    "manifest_sha256_actual": "6aea2eeccc1e2a2f897071573b69b51e9b671be3da2559ccfdab18616fdd05bc",
+    "metadata_manifest_hash_matches": true
+  },
+  {
+    "schema_version": 3,
+    "camera_order": [
+      "cam_f0",
+      "cam_b0",
+      "cam_l0",
+      "cam_r0"
+    ],
+    "image_size": [
+      1148,
+      672
+    ],
+    "split": "navtrain",
+    "data_split": "trainval",
+    "subset": "train",
+    "seed": 3407,
+    "rank": 2,
+    "world_size": 8,
+    "all_scenes_per_log": true,
+    "selected_log_count": 122,
+    "split_hashes": {
+      "navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f",
+      "navsim/planning/script/config/training/default_train_val_test_log_split.yaml": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    "grid_mask": false,
+    "vlm_input": "one current image; navigation only when explicitly enabled",
+    "navigation_one_hot_order": [
+      "turn left",
+      "go straight",
+      "turn right",
+      "unknown"
+    ],
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "skipped": [],
+    "missing_logs": [],
+    "source_hashes": {
+      "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+      "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+      "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+      "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+      "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+    },
+    "record_count": 9924,
+    "manifest_sha256_actual": "8ad6320d467e3b9e53ac305faf4886734d924d5a935fb14ee1d8544bb06cc976",
+    "metadata_manifest_hash_matches": true
+  },
+  {
+    "schema_version": 3,
+    "camera_order": [
+      "cam_f0",
+      "cam_b0",
+      "cam_l0",
+      "cam_r0"
+    ],
+    "image_size": [
+      1148,
+      672
+    ],
+    "split": "navtrain",
+    "data_split": "trainval",
+    "subset": "train",
+    "seed": 3407,
+    "rank": 3,
+    "world_size": 8,
+    "all_scenes_per_log": true,
+    "selected_log_count": 122,
+    "split_hashes": {
+      "navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f",
+      "navsim/planning/script/config/training/default_train_val_test_log_split.yaml": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    "grid_mask": false,
+    "vlm_input": "one current image; navigation only when explicitly enabled",
+    "navigation_one_hot_order": [
+      "turn left",
+      "go straight",
+      "turn right",
+      "unknown"
+    ],
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "skipped": [],
+    "missing_logs": [],
+    "source_hashes": {
+      "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+      "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+      "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+      "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+      "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+    },
+    "record_count": 10359,
+    "manifest_sha256_actual": "47cb074f7709aaa7e5498fb3066433da18f42566f69c0f2dd326e6bcb5d2fb1a",
+    "metadata_manifest_hash_matches": true
+  },
+  {
+    "schema_version": 3,
+    "camera_order": [
+      "cam_f0",
+      "cam_b0",
+      "cam_l0",
+      "cam_r0"
+    ],
+    "image_size": [
+      1148,
+      672
+    ],
+    "split": "navtrain",
+    "data_split": "trainval",
+    "subset": "train",
+    "seed": 3407,
+    "rank": 4,
+    "world_size": 8,
+    "all_scenes_per_log": true,
+    "selected_log_count": 122,
+    "split_hashes": {
+      "navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f",
+      "navsim/planning/script/config/training/default_train_val_test_log_split.yaml": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    "grid_mask": false,
+    "vlm_input": "one current image; navigation only when explicitly enabled",
+    "navigation_one_hot_order": [
+      "turn left",
+      "go straight",
+      "turn right",
+      "unknown"
+    ],
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "skipped": [],
+    "missing_logs": [],
+    "source_hashes": {
+      "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+      "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+      "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+      "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+      "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+    },
+    "record_count": 9259,
+    "manifest_sha256_actual": "2d03efa02a1b210afa10c5d4841ab2e05456c132980d256b191eebe80a11bd2c",
+    "metadata_manifest_hash_matches": true
+  },
+  {
+    "schema_version": 3,
+    "camera_order": [
+      "cam_f0",
+      "cam_b0",
+      "cam_l0",
+      "cam_r0"
+    ],
+    "image_size": [
+      1148,
+      672
+    ],
+    "split": "navtrain",
+    "data_split": "trainval",
+    "subset": "train",
+    "seed": 3407,
+    "rank": 5,
+    "world_size": 8,
+    "all_scenes_per_log": true,
+    "selected_log_count": 122,
+    "split_hashes": {
+      "navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f",
+      "navsim/planning/script/config/training/default_train_val_test_log_split.yaml": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    "grid_mask": false,
+    "vlm_input": "one current image; navigation only when explicitly enabled",
+    "navigation_one_hot_order": [
+      "turn left",
+      "go straight",
+      "turn right",
+      "unknown"
+    ],
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "skipped": [],
+    "missing_logs": [],
+    "source_hashes": {
+      "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+      "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+      "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+      "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+      "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+    },
+    "record_count": 13019,
+    "manifest_sha256_actual": "2a37ed654c9f4d5e02b14fd823904862a1806cadc0bd45cfdd47098ee44379c7",
+    "metadata_manifest_hash_matches": true
+  },
+  {
+    "schema_version": 3,
+    "camera_order": [
+      "cam_f0",
+      "cam_b0",
+      "cam_l0",
+      "cam_r0"
+    ],
+    "image_size": [
+      1148,
+      672
+    ],
+    "split": "navtrain",
+    "data_split": "trainval",
+    "subset": "train",
+    "seed": 3407,
+    "rank": 6,
+    "world_size": 8,
+    "all_scenes_per_log": true,
+    "selected_log_count": 122,
+    "split_hashes": {
+      "navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f",
+      "navsim/planning/script/config/training/default_train_val_test_log_split.yaml": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    "grid_mask": false,
+    "vlm_input": "one current image; navigation only when explicitly enabled",
+    "navigation_one_hot_order": [
+      "turn left",
+      "go straight",
+      "turn right",
+      "unknown"
+    ],
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "skipped": [],
+    "missing_logs": [],
+    "source_hashes": {
+      "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+      "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+      "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+      "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+      "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+    },
+    "record_count": 8401,
+    "manifest_sha256_actual": "973fac8b137ed4558e0fbd0e31459492c15d35aa02f6ab0ffdc11b072e659739",
+    "metadata_manifest_hash_matches": true
+  },
+  {
+    "schema_version": 3,
+    "camera_order": [
+      "cam_f0",
+      "cam_b0",
+      "cam_l0",
+      "cam_r0"
+    ],
+    "image_size": [
+      1148,
+      672
+    ],
+    "split": "navtrain",
+    "data_split": "trainval",
+    "subset": "train",
+    "seed": 3407,
+    "rank": 7,
+    "world_size": 8,
+    "all_scenes_per_log": true,
+    "selected_log_count": 122,
+    "split_hashes": {
+      "navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f",
+      "navsim/planning/script/config/training/default_train_val_test_log_split.yaml": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    "grid_mask": false,
+    "vlm_input": "one current image; navigation only when explicitly enabled",
+    "navigation_one_hot_order": [
+      "turn left",
+      "go straight",
+      "turn right",
+      "unknown"
+    ],
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "skipped": [],
+    "missing_logs": [],
+    "source_hashes": {
+      "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+      "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+      "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+      "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+      "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+    },
+    "record_count": 9763,
+    "manifest_sha256_actual": "19df03d3b684b5d803e1e439317aacdbdb3b4bddccab0a75a93d83bcfc6828e3",
+    "metadata_manifest_hash_matches": true
+  }
+]

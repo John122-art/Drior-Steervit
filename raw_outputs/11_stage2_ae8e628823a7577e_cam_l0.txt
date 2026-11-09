@@ -1,0 +1,30 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "silver SUV on the right edge of the frame",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "white sedan in the adjacent lane to the right",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "group of pedestrians standing on the crosswalk",
+      "category": "pedestrian"
+    },
+    {
+      "phrase": "black bollards lining the edge of the crosswalk",
+      "category": "barrier"
+    },
+    {
+      "phrase": "traffic lights mounted on the overhead gantry",
+      "category": "traffic_light"
+    },
+    "phrase": "white and black striped road markings on the pavement",
+    "category": "other"
+  ]
+}
+```

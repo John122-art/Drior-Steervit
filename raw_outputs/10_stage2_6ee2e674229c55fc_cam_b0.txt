@@ -1,0 +1,140 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "white box truck in the right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant white vehicle in the right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant white vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far right lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "distant dark vehicle in the far left lane",
+      "category": "

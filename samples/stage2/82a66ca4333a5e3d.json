@@ -1,0 +1,287 @@
+{
+  "token": "82a66ca4333a5e3d",
+  "cache_version": "30a0b9175896615df83cccdd18da2a9bbb777a4d415bc8e2e1fa75520202c14e",
+  "input_hash": "ff45cc8a98f8add3d469805384646e31e9ce361f619bc57095d24b199fd88ee7",
+  "rule_status": "needs_review",
+  "scene_text": {
+    "cam_f0": {
+      "text": "dark SUV in the ego lane, white van in the left lane, black sedan in the left lane, dark sedan in the left lane, white dashed lane markings, solid white curb line",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "other",
+        "other"
+      ]
+    },
+    "cam_b0": {
+      "text": "white sedan positioned in the ego lane, orange SUV located in the adjacent right lane, silver SUV traveling in the lane to the right, black pickup truck with large tires in the right lane, pedestrian walkway bridge spanning the road, traffic lights suspended over the intersection",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "other",
+        "traffic_light"
+      ]
+    },
+    "cam_l0": {
+      "text": "white pickup truck positioned on the left side of the road, dark SUV traveling in the lane to the right of the pickup truck, maroon sedan in the lane to the right of the SUV, black sedan visible further down the road on the right, white sedan partially visible behind the dark SUV",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle"
+      ]
+    },
+    "cam_r0": {
+      "text": "curved grey concrete wall defining the right boundary of the driving corridor",
+      "categories": [
+        "barrier"
+      ]
+    }
+  },
+  "audit": {
+    "cam_f0": {
+      "text": "dark SUV in the ego lane, white van in the left lane, black sedan in the left lane, dark sedan in the left lane, white dashed lane markings, solid white curb line",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "other",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "dark SUV in the ego lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "white van in the left lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "black sedan in the left lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "dark sedan in the left lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "white dashed lane markings",
+          "category": "other"
+        },
+        {
+          "phrase": "solid white curb line",
+          "category": "other"
+        }
+      ],
+      "token_count": 39,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\"objects\": [{\"phrase\": \"dark SUV in the ego lane\", \"category\": \"vehicle\"}, {\"phrase\": \"white van in the left lane\", \"category\": \"vehicle\"}, {\"phrase\": \"black sedan in the left lane\", \"category\": \"vehicle\"}, {\"phrase\": \"dark sedan in the left lane\", \"category\": \"vehicle\"}, {\"phrase\": \"white dashed lane markings\", \"category\": \"other\"}, {\"phrase\": \"solid white curb line\", \"category\": \"other\"}]}\n```",
+          "raw_text": "</think>\n\n```json\n{\"objects\": [{\"phrase\": \"dark SUV in the ego lane\", \"category\": \"vehicle\"}, {\"phrase\": \"white van in the left lane\", \"category\": \"vehicle\"}, {\"phrase\": \"black sedan in the left lane\", \"category\": \"vehicle\"}, {\"phrase\": \"dark sedan in the left lane\", \"category\": \"vehicle\"}, {\"phrase\": \"white dashed lane markings\", \"category\": \"other\"}, {\"phrase\": \"solid white curb line\", \"category\": \"other\"}]}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 112,
+          "seconds": 3.5132553129997177,
+          "question": "You are looking at the front camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.14.25.15_veh-26_03415_03581/CAM_F0/68ea3c25cd485f7c.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_b0": {
+      "text": "white sedan positioned in the ego lane, orange SUV located in the adjacent right lane, silver SUV traveling in the lane to the right, black pickup truck with large tires in the right lane, pedestrian walkway bridge spanning the road, traffic lights suspended over the intersection",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "other",
+        "traffic_light"
+      ],
+      "objects": [
+        {
+          "phrase": "white sedan positioned in the ego lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "orange SUV located in the adjacent right lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "silver SUV traveling in the lane to the right",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "black pickup truck with large tires in the right lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "pedestrian walkway bridge spanning the road",
+          "category": "other"
+        },
+        {
+          "phrase": "traffic lights suspended over the intersection",
+          "category": "traffic_light"
+        }
+      ],
+      "token_count": 54,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white sedan positioned in the ego lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"orange SUV located in the adjacent right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"silver SUV traveling in the lane to the right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black pickup truck with large tires in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"pedestrian walkway bridge spanning the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"traffic lights suspended over the intersection\",\n      \"category\": \"traffic_light\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white sedan positioned in the ego lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"orange SUV located in the adjacent right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"silver SUV traveling in the lane to the right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black pickup truck with large tires in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"pedestrian walkway bridge spanning the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"traffic lights suspended over the intersection\",\n      \"category\": \"traffic_light\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 198,
+          "seconds": 5.7165808700001435,
+          "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.14.25.15_veh-26_03415_03581/CAM_B0/e8863fc934465a32.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_l0": {
+      "text": "white pickup truck positioned on the left side of the road, dark SUV traveling in the lane to the right of the pickup truck, maroon sedan in the lane to the right of the SUV, black sedan visible further down the road on the right, white sedan partially visible behind the dark SUV",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle"
+      ],
+      "objects": [
+        {
+          "phrase": "white pickup truck positioned on the left side of the road",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "dark SUV traveling in the lane to the right of the pickup truck",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "maroon sedan in the lane to the right of the SUV",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "black sedan visible further down the road on the right",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "white sedan partially visible behind the dark SUV",
+          "category": "vehicle"
+        }
+      ],
+      "token_count": 60,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [
+        {
+          "object_index": 2,
+          "original": {
+            "phrase": "maroon sedan driving in the lane to the right of the SUV",
+            "category": "vehicle"
+          },
+          "replacement": {
+            "phrase": "maroon sedan in the lane to the right of the SUV",
+            "category": "vehicle"
+          },
+          "reason": "remove_action_before_static_location"
+        }
+      ],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\"objects\": [{\"phrase\": \"white pickup truck positioned on the left side of the road\", \"category\": \"vehicle\"}, {\"phrase\": \"dark SUV traveling in the lane to the right of the pickup truck\", \"category\": \"vehicle\"}, {\"phrase\": \"maroon sedan driving in the lane to the right of the SUV\", \"category\": \"vehicle\"}, {\"phrase\": \"black sedan visible further down the road on the right\", \"category\": \"vehicle\"}, {\"phrase\": \"white sedan partially visible behind the dark SUV\", \"category\": \"vehicle\"}]}\n```",
+          "raw_text": "</think>\n\n```json\n{\"objects\": [{\"phrase\": \"white pickup truck positioned on the left side of the road\", \"category\": \"vehicle\"}, {\"phrase\": \"dark SUV traveling in the lane to the right of the pickup truck\", \"category\": \"vehicle\"}, {\"phrase\": \"maroon sedan driving in the lane to the right of the SUV\", \"category\": \"vehicle\"}, {\"phrase\": \"black sedan visible further down the road on the right\", \"category\": \"vehicle\"}, {\"phrase\": \"white sedan partially visible behind the dark SUV\", \"category\": \"vehicle\"}]}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 124,
+          "seconds": 3.8104341150001346,
+          "question": "You are looking at the front-left camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.14.25.15_veh-26_03415_03581/CAM_L0/2e6bc478e2645f51.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_r0": {
+      "text": "curved grey concrete wall defining the right boundary of the driving corridor",
+      "categories": [
+        "barrier"
+      ],
+      "objects": [
+        {
+          "phrase": "curved grey concrete wall defining the right boundary of the driving corridor",
+          "category": "barrier"
+        }
+      ],
+      "token_count": 15,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\"objects\": [{\"phrase\": \"curved grey concrete wall defining the right boundary of the driving corridor\", \"category\": \"barrier\"}]}\n```",
+          "raw_text": "</think>\n\n```json\n{\"objects\": [{\"phrase\": \"curved grey concrete wall defining the right boundary of the driving corridor\", \"category\": \"barrier\"}]}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 39,
+          "seconds": 1.4990761819999534,
+          "question": "You are looking at the front-right camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.14.25.15_veh-26_03415_03581/CAM_R0/8792e46786d150d1.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    }
+  }
+}

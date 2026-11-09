@@ -1,0 +1,35 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "dark pickup truck driving in the lane ahead",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "concrete barrier lining the right side of the road",
+      "category": "barrier"
+    },
+    pedestrian overpass spanning the road",
+      "category": "other"
+    },
+    {
+      "phrase": "traffic light on the left pole",
+      "category": "traffic_light"
+    },
+    {
+      "phrase": "yield sign on the left side of the road",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white semi-truck with Pepsi trailer",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "white SUV in the distance on the left",
+      "category": "vehicle"
+    }
+  ]
+}
+```

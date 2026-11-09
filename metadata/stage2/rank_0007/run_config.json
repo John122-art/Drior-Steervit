@@ -1,0 +1,24 @@
+{
+  "rank": 7,
+  "world_size": 8,
+  "partition": "train",
+  "split": "navtrain",
+  "subset": "train",
+  "scenes": 0,
+  "seed": 3407,
+  "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+  "prompt": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/scene_navigation_v2.txt",
+  "prompt_sha256": "8ae2f1199f4617636762bc07f707c722cc0506c40d0138aa7670a10f4468259e",
+  "deep_scenes": 600,
+  "stage1": false,
+  "navigation_conditioned": true,
+  "orchestration_hashes": {
+    "check_feature_input.py": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "generate.py": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "merge.py": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "test_stage2.py": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "text_policy.py": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "validate.py": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "worker.py": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056"
+  }
+}

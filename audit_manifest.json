@@ -1,0 +1,14 @@
+{
+  "started": "2026-11-09T07:47:50.612119+00:00",
+  "finished": "2026-11-09T07:50:28.474902+00:00",
+  "seed": 20261109,
+  "groups": {
+    "stage1": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full",
+    "stage2": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109/train"
+  },
+  "snapshot_definition": "Per-group fixed filename inventory; each original cache read once and hashed. Generation may continue after inventory capture.",
+  "samples_per_group": 3,
+  "montages": 10,
+  "raw_calls": 20,
+  "modified_generation_sources": false
+}

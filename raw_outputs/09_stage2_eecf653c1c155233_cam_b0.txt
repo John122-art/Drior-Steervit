@@ -1,0 +1,32 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "yellow chevron sign indicating a sharp left curve",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "double solid white lines marking the left edge of the road",
+      "category": "other"
+    },
+    {
+      "phrase": "curved asphalt road surface",
+      "category": "other"
+    },
+    {
+      "phrase": "concrete curb separating the road from the grassy verge",
+      "category": "other"
+    },
+    {
+      "phrase": "modern multi-story building with white facade and greenery",
+      "category": "other"
+    },
+    {
+      "phrase": "small orange fire hydrant on the grass verge",
+      "category": "other"
+    }
+  ]
+}
+```

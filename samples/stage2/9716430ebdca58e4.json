@@ -1,0 +1,355 @@
+{
+  "token": "9716430ebdca58e4",
+  "cache_version": "30a0b9175896615df83cccdd18da2a9bbb777a4d415bc8e2e1fa75520202c14e",
+  "input_hash": "53547156862f951ed480e1b582d9e9526f47fbb588b9fe5d2302f252ff2ad242",
+  "rule_status": "needs_review",
+  "scene_text": {
+    "cam_f0": {
+      "text": "blue box truck in the right lane, white utility vehicle in the left lane, distant traffic lights at the intersection, white painted crosswalk markings on the road surface, concrete curb separating the road from the landscaped median",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "traffic_light",
+        "other",
+        "other"
+      ]
+    },
+    "cam_b0": {
+      "text": "silver sedan in the adjacent right lane, red vehicle in the same lane, yellow pedestrian crossing sign, white dashed lane markings, solid white line marking the right road edge",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "traffic_sign",
+        "other",
+        "other"
+      ]
+    },
+    "cam_l0": {
+      "text": "two pedestrians on the sidewalk to the left, two pedestrians on the sidewalk to the right, white diamond-shaped traffic sign on a pole, blue vertical 'WELCOME' sign on a grassy median, yellow painted curb marking on the road edge",
+      "categories": [
+        "pedestrian",
+        "pedestrian",
+        "traffic_sign",
+        "traffic_sign",
+        "other"
+      ]
+    },
+    "cam_r0": {
+      "text": "red sedan on the right side of the road, three pedestrians on the sidewalk to the right, brown directional sign pointing to Luxor, yellow pedestrian crossing sign, white metal barrier separating the road from the sidewalk, white structural columns supporting an overhead structure",
+      "categories": [
+        "vehicle",
+        "pedestrian",
+        "traffic_sign",
+        "traffic_sign",
+        "barrier",
+        "other"
+      ]
+    }
+  },
+  "audit": {
+    "cam_f0": {
+      "text": "blue box truck in the right lane, white utility vehicle in the left lane, distant traffic lights at the intersection, white painted crosswalk markings on the road surface, concrete curb separating the road from the landscaped median",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "traffic_light",
+        "other",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "blue box truck in the right lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "white utility vehicle in the left lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "distant traffic lights at the intersection",
+          "category": "traffic_light"
+        },
+        {
+          "phrase": "white painted crosswalk markings on the road surface",
+          "category": "other"
+        },
+        {
+          "phrase": "concrete curb separating the road from the landscaped median",
+          "category": "other"
+        }
+      ],
+      "token_count": 45,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [
+        {
+          "object_index": 0,
+          "original": {
+            "phrase": "blue box truck driving in the right lane",
+            "category": "vehicle"
+          },
+          "replacement": {
+            "phrase": "blue box truck in the right lane",
+            "category": "vehicle"
+          },
+          "reason": "remove_action_before_static_location"
+        }
+      ],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"blue box truck driving in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white utility vehicle in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant traffic lights at the intersection\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"white painted crosswalk markings on the road surface\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"concrete curb separating the road from the landscaped median\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"blue box truck driving in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white utility vehicle in the left lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"distant traffic lights at the intersection\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"white painted crosswalk markings on the road surface\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"concrete curb separating the road from the landscaped median\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 170,
+          "seconds": 5.099571143000503,
+          "question": "You are looking at the front camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_F0/0dd641e064685b7f.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_b0": {
+      "text": "silver sedan in the adjacent right lane, red vehicle in the same lane, yellow pedestrian crossing sign, white dashed lane markings, solid white line marking the right road edge",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "traffic_sign",
+        "other",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "silver sedan in the adjacent right lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "red vehicle in the same lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "yellow pedestrian crossing sign",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "white dashed lane markings",
+          "category": "other"
+        },
+        {
+          "phrase": "solid white line marking the right road edge",
+          "category": "other"
+        }
+      ],
+      "token_count": 35,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"silver sedan in the adjacent right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"red vehicle in the same lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"yellow pedestrian crossing sign\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white dashed lane markings\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"solid white line marking the right road edge\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"silver sedan in the adjacent right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"red vehicle in the same lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"yellow pedestrian crossing sign\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white dashed lane markings\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"solid white line marking the right road edge\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 157,
+          "seconds": 4.887582584000484,
+          "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_B0/02cfc1689cc7599d.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_l0": {
+      "text": "two pedestrians on the sidewalk to the left, two pedestrians on the sidewalk to the right, white diamond-shaped traffic sign on a pole, blue vertical 'WELCOME' sign on a grassy median, yellow painted curb marking on the road edge",
+      "categories": [
+        "pedestrian",
+        "pedestrian",
+        "traffic_sign",
+        "traffic_sign",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "two pedestrians on the sidewalk to the left",
+          "category": "pedestrian"
+        },
+        {
+          "phrase": "two pedestrians on the sidewalk to the right",
+          "category": "pedestrian"
+        },
+        {
+          "phrase": "white diamond-shaped traffic sign on a pole",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "blue vertical 'WELCOME' sign on a grassy median",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "yellow painted curb marking on the road edge",
+          "category": "other"
+        }
+      ],
+      "token_count": 53,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [
+        {
+          "object_index": 0,
+          "original": {
+            "phrase": "two pedestrians walking on the sidewalk to the left",
+            "category": "pedestrian"
+          },
+          "replacement": {
+            "phrase": "two pedestrians on the sidewalk to the left",
+            "category": "pedestrian"
+          },
+          "reason": "remove_action_before_static_location"
+        },
+        {
+          "object_index": 1,
+          "original": {
+            "phrase": "two pedestrians walking on the sidewalk to the right",
+            "category": "pedestrian"
+          },
+          "replacement": {
+            "phrase": "two pedestrians on the sidewalk to the right",
+            "category": "pedestrian"
+          },
+          "reason": "remove_action_before_static_location"
+        }
+      ],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"two pedestrians walking on the sidewalk to the left\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"two pedestrians walking on the sidewalk to the right\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"white diamond-shaped traffic sign on a pole\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"blue vertical 'WELCOME' sign on a grassy median\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"yellow painted curb marking on the road edge\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"two pedestrians walking on the sidewalk to the left\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"two pedestrians walking on the sidewalk to the right\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"white diamond-shaped traffic sign on a pole\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"blue vertical 'WELCOME' sign on a grassy median\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"yellow painted curb marking on the road edge\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 179,
+          "seconds": 5.395253863000107,
+          "question": "You are looking at the front-left camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_L0/dff60e479fda5eb3.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_r0": {
+      "text": "red sedan on the right side of the road, three pedestrians on the sidewalk to the right, brown directional sign pointing to Luxor, yellow pedestrian crossing sign, white metal barrier separating the road from the sidewalk, white structural columns supporting an overhead structure",
+      "categories": [
+        "vehicle",
+        "pedestrian",
+        "traffic_sign",
+        "traffic_sign",
+        "barrier",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "red sedan on the right side of the road",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "three pedestrians on the sidewalk to the right",
+          "category": "pedestrian"
+        },
+        {
+          "phrase": "brown directional sign pointing to Luxor",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "yellow pedestrian crossing sign",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "white metal barrier separating the road from the sidewalk",
+          "category": "barrier"
+        },
+        {
+          "phrase": "white structural columns supporting an overhead structure",
+          "category": "other"
+        }
+      ],
+      "token_count": 51,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [
+        {
+          "object_index": 0,
+          "original": {
+            "phrase": "red sedan parked on the right side of the road",
+            "category": "vehicle"
+          },
+          "replacement": {
+            "phrase": "red sedan on the right side of the road",
+            "category": "vehicle"
+          },
+          "reason": "remove_action_before_static_location"
+        },
+        {
+          "object_index": 1,
+          "original": {
+            "phrase": "three pedestrians walking on the sidewalk to the right",
+            "category": "pedestrian"
+          },
+          "replacement": {
+            "phrase": "three pedestrians on the sidewalk to the right",
+            "category": "pedestrian"
+          },
+          "reason": "remove_action_before_static_location"
+        }
+      ],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"red sedan parked on the right side of the road\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"three pedestrians walking on the sidewalk to the right\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"brown directional sign pointing to Luxor\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"yellow pedestrian crossing sign\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white metal barrier separating the road from the sidewalk\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"white structural columns supporting an overhead structure\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"red sedan parked on the right side of the road\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"three pedestrians walking on the sidewalk to the right\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"brown directional sign pointing to Luxor\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"yellow pedestrian crossing sign\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white metal barrier separating the road from the sidewalk\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"white structural columns supporting an overhead structure\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 199,
+          "seconds": 5.7874532059995545,
+          "question": "You are looking at the front-right camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.09.14.58.55_veh-35_00016_00182/CAM_R0/76ce57941dbf5efd.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    }
+  }
+}

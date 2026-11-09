@@ -1,0 +1,26 @@
+{
+  "token": "82a66ca4333a5e3d",
+  "log_name": "2021.06.14.14.25.15_veh-26_03415_03581",
+  "frame_index": 3,
+  "timestamp": 1623698758977766,
+  "images": {
+    "cam_f0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.14.25.15_veh-26_03415_03581/CAM_F0/68ea3c25cd485f7c.jpg",
+    "cam_b0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.14.25.15_veh-26_03415_03581/CAM_B0/e8863fc934465a32.jpg",
+    "cam_l0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.14.25.15_veh-26_03415_03581/CAM_L0/2e6bc478e2645f51.jpg",
+    "cam_r0": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.06.14.14.25.15_veh-26_03415_03581/CAM_R0/8792e46786d150d1.jpg"
+  },
+  "driving_command": [
+    0,
+    1,
+    0,
+    0
+  ],
+  "navigation_text": "go straight",
+  "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+  "image_sha256": {
+    "cam_f0": "c7ce032365aa65786e3a8ee1de5462eea043c5c8849029703a4f1b1eb50217eb",
+    "cam_b0": "ab13e6244bbd002ccb994194ddba041fe8b36f76264882d34792b847fa3cd8d0",
+    "cam_l0": "098eb26a6ef58f0dd43f26fab85da6724c7d3c1bbe477e2ddbb6a8dd8066e90f",
+    "cam_r0": "485d3fa81601d087733ed1b00334b267d5fea79ab5e48dae7e2df10ff61a0d4b"
+  }
+}

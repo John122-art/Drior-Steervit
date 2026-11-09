@@ -1,0 +1,1106 @@
+[
+  {
+    "rank": "rank_0000",
+    "source": "build_grounding.py",
+    "recorded": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "caption_cache.py",
+    "recorded": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "caption_repair.py",
+    "recorded": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "common.py",
+    "recorded": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "generate_captions.py",
+    "recorded": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "geometry.py",
+    "recorded": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "merge_stage1_shards.py",
+    "recorded": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "navigation.py",
+    "recorded": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "prepare_navsim.py",
+    "recorded": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "render_2d_boxes.py",
+    "recorded": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "render_caption_preview.py",
+    "recorded": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "selection.py",
+    "recorded": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "stage1_worker.py",
+    "recorded": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "stage2/check_feature_input.py",
+    "recorded": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "stage2/generate.py",
+    "recorded": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "stage2/merge.py",
+    "recorded": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "stage2/test_stage2.py",
+    "recorded": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "stage2/text_policy.py",
+    "recorded": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "stage2/validate.py",
+    "recorded": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "stage2/worker.py",
+    "recorded": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "test_data_pipeline.py",
+    "recorded": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "text_processing.py",
+    "recorded": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0000",
+    "source": "validate_pilot.py",
+    "recorded": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "build_grounding.py",
+    "recorded": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "caption_cache.py",
+    "recorded": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "caption_repair.py",
+    "recorded": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "common.py",
+    "recorded": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "generate_captions.py",
+    "recorded": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "geometry.py",
+    "recorded": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "merge_stage1_shards.py",
+    "recorded": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "navigation.py",
+    "recorded": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "prepare_navsim.py",
+    "recorded": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "render_2d_boxes.py",
+    "recorded": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "render_caption_preview.py",
+    "recorded": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "selection.py",
+    "recorded": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "stage1_worker.py",
+    "recorded": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "stage2/check_feature_input.py",
+    "recorded": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "stage2/generate.py",
+    "recorded": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "stage2/merge.py",
+    "recorded": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "stage2/test_stage2.py",
+    "recorded": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "stage2/text_policy.py",
+    "recorded": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "stage2/validate.py",
+    "recorded": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "stage2/worker.py",
+    "recorded": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "test_data_pipeline.py",
+    "recorded": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "text_processing.py",
+    "recorded": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0001",
+    "source": "validate_pilot.py",
+    "recorded": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "build_grounding.py",
+    "recorded": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "caption_cache.py",
+    "recorded": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "caption_repair.py",
+    "recorded": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "common.py",
+    "recorded": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "generate_captions.py",
+    "recorded": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "geometry.py",
+    "recorded": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "merge_stage1_shards.py",
+    "recorded": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "navigation.py",
+    "recorded": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "prepare_navsim.py",
+    "recorded": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "render_2d_boxes.py",
+    "recorded": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "render_caption_preview.py",
+    "recorded": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "selection.py",
+    "recorded": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "stage1_worker.py",
+    "recorded": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "stage2/check_feature_input.py",
+    "recorded": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "stage2/generate.py",
+    "recorded": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "stage2/merge.py",
+    "recorded": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "stage2/test_stage2.py",
+    "recorded": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "stage2/text_policy.py",
+    "recorded": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "stage2/validate.py",
+    "recorded": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "stage2/worker.py",
+    "recorded": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "test_data_pipeline.py",
+    "recorded": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "text_processing.py",
+    "recorded": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0002",
+    "source": "validate_pilot.py",
+    "recorded": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "build_grounding.py",
+    "recorded": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "caption_cache.py",
+    "recorded": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "caption_repair.py",
+    "recorded": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "common.py",
+    "recorded": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "generate_captions.py",
+    "recorded": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "geometry.py",
+    "recorded": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "merge_stage1_shards.py",
+    "recorded": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "navigation.py",
+    "recorded": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "prepare_navsim.py",
+    "recorded": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "render_2d_boxes.py",
+    "recorded": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "render_caption_preview.py",
+    "recorded": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "selection.py",
+    "recorded": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "stage1_worker.py",
+    "recorded": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "stage2/check_feature_input.py",
+    "recorded": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "stage2/generate.py",
+    "recorded": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "stage2/merge.py",
+    "recorded": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "stage2/test_stage2.py",
+    "recorded": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "stage2/text_policy.py",
+    "recorded": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "stage2/validate.py",
+    "recorded": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "stage2/worker.py",
+    "recorded": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "test_data_pipeline.py",
+    "recorded": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "text_processing.py",
+    "recorded": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0003",
+    "source": "validate_pilot.py",
+    "recorded": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "build_grounding.py",
+    "recorded": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "caption_cache.py",
+    "recorded": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "caption_repair.py",
+    "recorded": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "common.py",
+    "recorded": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "generate_captions.py",
+    "recorded": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "geometry.py",
+    "recorded": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "merge_stage1_shards.py",
+    "recorded": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "navigation.py",
+    "recorded": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "prepare_navsim.py",
+    "recorded": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "render_2d_boxes.py",
+    "recorded": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "render_caption_preview.py",
+    "recorded": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "selection.py",
+    "recorded": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "stage1_worker.py",
+    "recorded": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "stage2/check_feature_input.py",
+    "recorded": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "stage2/generate.py",
+    "recorded": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "stage2/merge.py",
+    "recorded": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "stage2/test_stage2.py",
+    "recorded": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "stage2/text_policy.py",
+    "recorded": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "stage2/validate.py",
+    "recorded": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "stage2/worker.py",
+    "recorded": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "test_data_pipeline.py",
+    "recorded": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "text_processing.py",
+    "recorded": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0004",
+    "source": "validate_pilot.py",
+    "recorded": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "build_grounding.py",
+    "recorded": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "caption_cache.py",
+    "recorded": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "caption_repair.py",
+    "recorded": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "common.py",
+    "recorded": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "generate_captions.py",
+    "recorded": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "geometry.py",
+    "recorded": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "merge_stage1_shards.py",
+    "recorded": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "navigation.py",
+    "recorded": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "prepare_navsim.py",
+    "recorded": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "render_2d_boxes.py",
+    "recorded": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "render_caption_preview.py",
+    "recorded": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "selection.py",
+    "recorded": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "stage1_worker.py",
+    "recorded": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "stage2/check_feature_input.py",
+    "recorded": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "stage2/generate.py",
+    "recorded": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "stage2/merge.py",
+    "recorded": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "stage2/test_stage2.py",
+    "recorded": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "stage2/text_policy.py",
+    "recorded": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "stage2/validate.py",
+    "recorded": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "stage2/worker.py",
+    "recorded": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "test_data_pipeline.py",
+    "recorded": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "text_processing.py",
+    "recorded": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0005",
+    "source": "validate_pilot.py",
+    "recorded": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "build_grounding.py",
+    "recorded": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "caption_cache.py",
+    "recorded": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "caption_repair.py",
+    "recorded": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "common.py",
+    "recorded": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "generate_captions.py",
+    "recorded": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "geometry.py",
+    "recorded": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "merge_stage1_shards.py",
+    "recorded": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "navigation.py",
+    "recorded": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "prepare_navsim.py",
+    "recorded": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "render_2d_boxes.py",
+    "recorded": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "render_caption_preview.py",
+    "recorded": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "selection.py",
+    "recorded": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "stage1_worker.py",
+    "recorded": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "stage2/check_feature_input.py",
+    "recorded": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "stage2/generate.py",
+    "recorded": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "stage2/merge.py",
+    "recorded": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "stage2/test_stage2.py",
+    "recorded": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "stage2/text_policy.py",
+    "recorded": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "stage2/validate.py",
+    "recorded": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "stage2/worker.py",
+    "recorded": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "test_data_pipeline.py",
+    "recorded": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "text_processing.py",
+    "recorded": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0006",
+    "source": "validate_pilot.py",
+    "recorded": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "build_grounding.py",
+    "recorded": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "caption_cache.py",
+    "recorded": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "caption_repair.py",
+    "recorded": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "common.py",
+    "recorded": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "generate_captions.py",
+    "recorded": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "geometry.py",
+    "recorded": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "merge_stage1_shards.py",
+    "recorded": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "navigation.py",
+    "recorded": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "prepare_navsim.py",
+    "recorded": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "render_2d_boxes.py",
+    "recorded": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "render_caption_preview.py",
+    "recorded": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "selection.py",
+    "recorded": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "stage1_worker.py",
+    "recorded": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "stage2/check_feature_input.py",
+    "recorded": "fbfb2759e03c63c8d6990e97c60dcd6bb1330b694599620f062f1f030f1b6350",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "stage2/generate.py",
+    "recorded": "9b6c56c8b683ba5dc382489cae8e64c6d1c6fb3bc7b309d7935bc04eba290d76",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "stage2/merge.py",
+    "recorded": "4c8005ec7dc457dcc9d5fc8d32282a9a1d468cddde4d85ca4eed219826b43c20",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "stage2/test_stage2.py",
+    "recorded": "055723d92fa56a73fe5dd816b40e81ff11a99a72e4d74cc180b6b7ae156c0c43",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "stage2/text_policy.py",
+    "recorded": "35eeb782ec88e8734f7521a6d30438487a8c83ccb2d43de191f64c339cecf106",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "stage2/validate.py",
+    "recorded": "3d2fd7b84b68e9f695d9e09d6d97531521d05cc0e10efaea2fa4c1a031a2bc24",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "stage2/worker.py",
+    "recorded": "572411dce37956cdc4e7d6e3686e0b0a54e454099f50eb5659143c45e1758056",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "test_data_pipeline.py",
+    "recorded": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "text_processing.py",
+    "recorded": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "matches_current": true
+  },
+  {
+    "rank": "rank_0007",
+    "source": "validate_pilot.py",
+    "recorded": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
+    "matches_current": true
+  }
+]

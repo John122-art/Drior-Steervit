@@ -1,0 +1,382 @@
+{
+  "token": "39c137195d075a93",
+  "cache_version": "4d3db7507fc0daf637f3b5a76b8a2f8f0409eb1355b355fe6a1ca6abd1c15c05",
+  "input_hash": "be72f680039af7152e427481165f51fdf04e70ad18206fe585ea228b2471d729",
+  "rule_status": "needs_review",
+  "scene_text": {
+    "cam_f0": {
+      "text": "white pickup truck on the left side near the building, white Ryder box truck on the right side, white striped crosswalk markings spanning the road, white striped crosswalk markings at the bottom foreground, orange traffic cones placed near the right curb",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "other",
+        "other",
+        "traffic_cone"
+      ]
+    },
+    "cam_b0": {
+      "text": "brown SUV occupying the immediate foreground, black sedan in the adjacent lane to the right, double yellow lines marking the center of the road, gray commercial building with large windows on the right",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "other",
+        "other"
+      ]
+    },
+    "cam_l0": {
+      "text": "white crosswalk markings on the road surface, white street sign reading FIRST ST, dark green SUV near the crosswalk, white pickup truck in the background, large white crane structure in the background",
+      "categories": [
+        "other",
+        "traffic_sign",
+        "vehicle",
+        "vehicle",
+        "other"
+      ]
+    },
+    "cam_r0": {
+      "text": "red stop sign with all-way plaque mounted on a metal pole, white painted crosswalk lines forming a rectangular intersection marking, white painted stop line perpendicular to the curb at the intersection, wooden utility pole with street sign and overhead wires, chain-link fence enclosing a storage area with stacked pipes on the right",
+      "categories": [
+        "traffic_sign",
+        "other",
+        "other",
+        "other",
+        "barrier"
+      ]
+    }
+  },
+  "audit": {
+    "cam_f0": {
+      "text": "white pickup truck on the left side near the building, white Ryder box truck on the right side, white striped crosswalk markings spanning the road, white striped crosswalk markings at the bottom foreground, orange traffic cones placed near the right curb",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "other",
+        "other",
+        "traffic_cone"
+      ],
+      "objects": [
+        {
+          "phrase": "white pickup truck on the left side near the building",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "white Ryder box truck on the right side",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "white striped crosswalk markings spanning the road",
+          "category": "other"
+        },
+        {
+          "phrase": "white striped crosswalk markings at the bottom foreground",
+          "category": "other"
+        },
+        {
+          "phrase": "orange traffic cones placed near the right curb",
+          "category": "traffic_cone"
+        }
+      ],
+      "token_count": 49,
+      "removed": [
+        {
+          "phrase": "silver sedan crossing the intersection from left to right",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "phrase": "white van parked behind the silver sedan",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [
+        {
+          "object_index": 1,
+          "original": {
+            "phrase": "white pickup truck parked on the left side near the building",
+            "category": "vehicle"
+          },
+          "replacement": {
+            "phrase": "white pickup truck on the left side near the building",
+            "category": "vehicle"
+          },
+          "reason": "remove_action_before_static_location"
+        },
+        {
+          "object_index": 3,
+          "original": {
+            "phrase": "white Ryder box truck parked on the right side",
+            "category": "vehicle"
+          },
+          "replacement": {
+            "phrase": "white Ryder box truck on the right side",
+            "category": "vehicle"
+          },
+          "reason": "remove_action_before_static_location"
+        }
+      ],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"silver sedan crossing the intersection from left to right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white pickup truck parked on the left side near the building\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white van parked behind the silver sedan\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white Ryder box truck parked on the right side\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white striped crosswalk markings spanning the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"white striped crosswalk markings at the bottom foreground\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"orange traffic cones placed near the right curb\",\n      \"category\": \"traffic_cone\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"silver sedan crossing the intersection from left to right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white pickup truck parked on the left side near the building\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white van parked behind the silver sedan\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white Ryder box truck parked on the right side\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white striped crosswalk markings spanning the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"white striped crosswalk markings at the bottom foreground\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"orange traffic cones placed near the right curb\",\n      \"category\": \"traffic_cone\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 232,
+          "seconds": 6.739938651000557,
+          "question": "You are looking at the front camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.09.15.13.52.55_veh-39_00371_00631/CAM_F0/b2b5643b46fa591d.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_b0": {
+      "text": "brown SUV occupying the immediate foreground, black sedan in the adjacent lane to the right, double yellow lines marking the center of the road, gray commercial building with large windows on the right",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "other",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "brown SUV occupying the immediate foreground",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "black sedan in the adjacent lane to the right",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "double yellow lines marking the center of the road",
+          "category": "other"
+        },
+        {
+          "phrase": "gray commercial building with large windows on the right",
+          "category": "other"
+        }
+      ],
+      "token_count": 38,
+      "removed": [
+        {
+          "phrase": "row of parked vehicles lining the right side of the road",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [
+        {
+          "object_index": 1,
+          "original": {
+            "phrase": "black sedan driving in the adjacent lane to the right",
+            "category": "vehicle"
+          },
+          "replacement": {
+            "phrase": "black sedan in the adjacent lane to the right",
+            "category": "vehicle"
+          },
+          "reason": "remove_action_before_static_location"
+        }
+      ],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"brown SUV occupying the immediate foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black sedan driving in the adjacent lane to the right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"row of parked vehicles lining the right side of the road\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"double yellow lines marking the center of the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"gray commercial building with large windows on the right\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"brown SUV occupying the immediate foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"black sedan driving in the adjacent lane to the right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"row of parked vehicles lining the right side of the road\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"double yellow lines marking the center of the road\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"gray commercial building with large windows on the right\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 172,
+          "seconds": 5.089882950000174,
+          "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.09.15.13.52.55_veh-39_00371_00631/CAM_B0/04b302510fb1517b.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_l0": {
+      "text": "white crosswalk markings on the road surface, white street sign reading FIRST ST, dark green SUV near the crosswalk, white pickup truck in the background, large white crane structure in the background",
+      "categories": [
+        "other",
+        "traffic_sign",
+        "vehicle",
+        "vehicle",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "white crosswalk markings on the road surface",
+          "category": "other"
+        },
+        {
+          "phrase": "white street sign reading FIRST ST",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "dark green SUV near the crosswalk",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "white pickup truck in the background",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "large white crane structure in the background",
+          "category": "other"
+        }
+      ],
+      "token_count": 40,
+      "removed": [
+        {
+          "phrase": "silver sedan parked behind the dark green SUV",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [
+        {
+          "object_index": 2,
+          "original": {
+            "phrase": "dark green SUV parked near the crosswalk",
+            "category": "vehicle"
+          },
+          "replacement": {
+            "phrase": "dark green SUV near the crosswalk",
+            "category": "vehicle"
+          },
+          "reason": "remove_action_before_static_location"
+        },
+        {
+          "object_index": 4,
+          "original": {
+            "phrase": "white pickup truck parked in the background",
+            "category": "vehicle"
+          },
+          "replacement": {
+            "phrase": "white pickup truck in the background",
+            "category": "vehicle"
+          },
+          "reason": "remove_action_before_static_location"
+        }
+      ],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white crosswalk markings on the road surface\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"white street sign reading FIRST ST\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"dark green SUV parked near the crosswalk\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"silver sedan parked behind the dark green SUV\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white pickup truck parked in the background\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"large white crane structure in the background\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white crosswalk markings on the road surface\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"white street sign reading FIRST ST\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"dark green SUV parked near the crosswalk\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"silver sedan parked behind the dark green SUV\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white pickup truck parked in the background\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"large white crane structure in the background\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 193,
+          "seconds": 5.704304179998871,
+          "question": "You are looking at the front-left camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.09.15.13.52.55_veh-39_00371_00631/CAM_L0/cca0ef3ad28e511f.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_r0": {
+      "text": "red stop sign with all-way plaque mounted on a metal pole, white painted crosswalk lines forming a rectangular intersection marking, white painted stop line perpendicular to the curb at the intersection, wooden utility pole with street sign and overhead wires, chain-link fence enclosing a storage area with stacked pipes on the right",
+      "categories": [
+        "traffic_sign",
+        "other",
+        "other",
+        "other",
+        "barrier"
+      ],
+      "objects": [
+        {
+          "phrase": "red stop sign with all-way plaque mounted on a metal pole",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "white painted crosswalk lines forming a rectangular intersection marking",
+          "category": "other"
+        },
+        {
+          "phrase": "white painted stop line perpendicular to the curb at the intersection",
+          "category": "other"
+        },
+        {
+          "phrase": "wooden utility pole with street sign and overhead wires",
+          "category": "other"
+        },
+        {
+          "phrase": "chain-link fence enclosing a storage area with stacked pipes on the right",
+          "category": "barrier"
+        }
+      ],
+      "token_count": 64,
+      "removed": [
+        {
+          "phrase": "dark brown SUV parked parallel to the curb on the opposite side of the street",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "phrase": "white SUV parked behind the dark brown SUV",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "phrase": "silver sedan parked further down the street behind the white SUV",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"red stop sign with all-way plaque mounted on a metal pole\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white painted crosswalk lines forming a rectangular intersection marking\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"white painted stop line perpendicular to the curb at the intersection\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"dark brown SUV parked parallel to the curb on the opposite side of the street\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white SUV parked behind the dark brown SUV\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"silver sedan parked further down the street behind the white SUV\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"wooden utility pole with street sign and overhead wires\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"chain-link fence enclosing a storage area with stacked pipes on the right\",\n      \"category\": \"barrier\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"red stop sign with all-way plaque mounted on a metal pole\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"white painted crosswalk lines forming a rectangular intersection marking\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"white painted stop line perpendicular to the curb at the intersection\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"dark brown SUV parked parallel to the curb on the opposite side of the street\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white SUV parked behind the dark brown SUV\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"silver sedan parked further down the street behind the white SUV\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"wooden utility pole with street sign and overhead wires\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"chain-link fence enclosing a storage area with stacked pipes on the right\",\n      \"category\": \"barrier\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 282,
+          "seconds": 8.151265541997418,
+          "question": "You are looking at the front-right camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.09.15.13.52.55_veh-39_00371_00631/CAM_R0/f21df71140185b4a.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    }
+  }
+}

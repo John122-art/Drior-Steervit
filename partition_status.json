@@ -1,0 +1,38 @@
+{
+  "train": {
+    "full_directory_exists": true,
+    "full_complete": false,
+    "full_merged_text_exists": false,
+    "pilot_path": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_final_20261107/train",
+    "pilot_complete": true,
+    "pilot_scenes": 1,
+    "pilot_prompt_matches_full": true,
+    "pilot_model_matches_full": true,
+    "pilot_policy_matches_full": true,
+    "pilot_decoding_matches_full": true
+  },
+  "val": {
+    "full_directory_exists": false,
+    "full_complete": false,
+    "full_merged_text_exists": false,
+    "pilot_path": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_final_20261107/val",
+    "pilot_complete": true,
+    "pilot_scenes": 1,
+    "pilot_prompt_matches_full": true,
+    "pilot_model_matches_full": true,
+    "pilot_policy_matches_full": true,
+    "pilot_decoding_matches_full": true
+  },
+  "test": {
+    "full_directory_exists": false,
+    "full_complete": false,
+    "full_merged_text_exists": false,
+    "pilot_path": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_final_20261107/test",
+    "pilot_complete": true,
+    "pilot_scenes": 1,
+    "pilot_prompt_matches_full": true,
+    "pilot_model_matches_full": true,
+    "pilot_policy_matches_full": true,
+    "pilot_decoding_matches_full": true
+  }
+}

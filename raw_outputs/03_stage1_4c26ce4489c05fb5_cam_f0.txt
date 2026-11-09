@@ -1,0 +1,14 @@
+
+
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "a silver SUV in the center of the image",
+      "category": "vehicle"
+    }
+  ]
+}
+```

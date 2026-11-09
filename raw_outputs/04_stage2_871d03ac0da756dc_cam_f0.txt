@@ -1,0 +1,28 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "dark blue sedan positioned in the left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "traffic light assembly suspended over the intersection",
+      "category": "traffic_light"
+    },
+    {
+      "phrase": "white dashed lane markings defining the road geometry",
+      "category": "other"
+    },
+    {
+      "phrase": "orange diamond-shaped warning sign on the median",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white sedan visible in the distance on the left",
+      "category": "vehicle"
+    }
+  ]
+}
+```

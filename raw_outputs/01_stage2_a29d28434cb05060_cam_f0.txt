@@ -1,0 +1,28 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "white minivan in the center lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "black sedan in the left lane",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "orange sedan on the far left",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "green traffic lights at the intersection",
+      "category": "traffic_light"
+    },
+    "other": [
+      "multi-lane road",
+      "lane markings"
+    ]
+  ]
+}
+```

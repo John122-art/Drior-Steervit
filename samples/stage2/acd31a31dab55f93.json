@@ -1,0 +1,254 @@
+{
+  "token": "acd31a31dab55f93",
+  "cache_version": "b8d8cad4b31f02342ad822f7f04083abe6ead5b57994f7d8113fb236ad3a7f9a",
+  "input_hash": "9a9830ad03493e4b45b97d62db665caa7c287aeab857aa121065e469075c8978",
+  "rule_status": "needs_review",
+  "scene_text": {
+    "cam_f0": {
+      "text": "white minivan on the far left edge, three pedestrians standing on the right side near the curb, black bollards and a white sign on the left side of the road, red painted curb along the right edge",
+      "categories": [
+        "vehicle",
+        "pedestrian",
+        "traffic_sign",
+        "other"
+      ]
+    },
+    "cam_b0": {
+      "text": "",
+      "categories": []
+    },
+    "cam_l0": {
+      "text": "silver minivan positioned in the immediate left foreground, white minivan traveling in the right lane, pedestrian in the middle distance near the intersection, stop sign visible on the right side of the intersection",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "pedestrian",
+        "traffic_sign"
+      ]
+    },
+    "cam_r0": {
+      "text": "group of four pedestrians standing on the sidewalk near the left edge, large potted palm tree positioned in the center of the sidewalk, yellow traffic cone located on the right side near the curb, red curb marking along the bottom edge of the frame",
+      "categories": [
+        "pedestrian",
+        "other",
+        "traffic_cone",
+        "other"
+      ]
+    }
+  },
+  "audit": {
+    "cam_f0": {
+      "text": "white minivan on the far left edge, three pedestrians standing on the right side near the curb, black bollards and a white sign on the left side of the road, red painted curb along the right edge",
+      "categories": [
+        "vehicle",
+        "pedestrian",
+        "traffic_sign",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "white minivan on the far left edge",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "three pedestrians standing on the right side near the curb",
+          "category": "pedestrian"
+        },
+        {
+          "phrase": "black bollards and a white sign on the left side of the road",
+          "category": "traffic_sign"
+        },
+        {
+          "phrase": "red painted curb along the right edge",
+          "category": "other"
+        }
+      ],
+      "token_count": 45,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white minivan on the far left edge\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"three pedestrians standing on the right side near the curb\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"black bollards and a white sign on the left side of the road\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"red painted curb along the right edge\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"white minivan on the far left edge\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"three pedestrians standing on the right side near the curb\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"black bollards and a white sign on the left side of the road\",\n      \"category\": \"traffic_sign\"\n    },\n    {\n      \"phrase\": \"red painted curb along the right edge\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 148,
+          "seconds": 4.529963402999783,
+          "question": "You are looking at the front camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_03836_05047/CAM_F0/4ac9d5ae1c4855ad.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_b0": {
+      "text": "",
+      "categories": [],
+      "objects": [],
+      "removed": [],
+      "local_edits": [],
+      "token_count": 2,
+      "status": "generation_failed",
+      "format_normalization": "none",
+      "error": "generation_truncated",
+      "attempts": [
+        {
+          "answer": "```json\n{\"objects\": [{\"phrase\": \"dark SUV positioned in the driving lane\", \"category\": \"vehicle\"}, {\"phrase\": \"pedestrians standing near the left building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrians standing near the center-left building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrians standing near the center building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrians standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"ped",
+          "raw_text": "</think>\n\n```json\n{\"objects\": [{\"phrase\": \"dark SUV positioned in the driving lane\", \"category\": \"vehicle\"}, {\"phrase\": \"pedestrians standing near the left building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrians standing near the center-left building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrians standing near the center building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrians standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"pedestrian standing near the right building entrance\", \"category\": \"pedestrian\"}, {\"phrase\": \"ped",
+          "finish_reason": "length",
+          "generated_tokens": 1024,
+          "seconds": 28.18041632099994,
+          "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_03836_05047/CAM_B0/e9fe382a980e5d6d.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": "generation_truncated"
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_l0": {
+      "text": "silver minivan positioned in the immediate left foreground, white minivan traveling in the right lane, pedestrian in the middle distance near the intersection, stop sign visible on the right side of the intersection",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "pedestrian",
+        "traffic_sign"
+      ],
+      "objects": [
+        {
+          "phrase": "silver minivan positioned in the immediate left foreground",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "white minivan traveling in the right lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "pedestrian in the middle distance near the intersection",
+          "category": "pedestrian"
+        },
+        {
+          "phrase": "stop sign visible on the right side of the intersection",
+          "category": "traffic_sign"
+        }
+      ],
+      "token_count": 40,
+      "removed": [
+        {
+          "phrase": "row of parked vehicles along the far roadside",
+          "category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [
+        {
+          "object_index": 2,
+          "original": {
+            "phrase": "pedestrian walking in the middle distance near the intersection",
+            "category": "pedestrian"
+          },
+          "replacement": {
+            "phrase": "pedestrian in the middle distance near the intersection",
+            "category": "pedestrian"
+          },
+          "reason": "remove_action_before_static_location"
+        }
+      ],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"silver minivan positioned in the immediate left foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white minivan traveling in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"pedestrian walking in the middle distance near the intersection\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"row of parked vehicles along the far roadside\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"stop sign visible on the right side of the intersection\",\n      \"category\": \"traffic_sign\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"silver minivan positioned in the immediate left foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"white minivan traveling in the right lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"pedestrian walking in the middle distance near the intersection\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"row of parked vehicles along the far roadside\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"stop sign visible on the right side of the intersection\",\n      \"category\": \"traffic_sign\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 176,
+          "seconds": 5.401002618000348,
+          "question": "You are looking at the front-left camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_03836_05047/CAM_L0/49a91e242be85bad.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    },
+    "cam_r0": {
+      "text": "group of four pedestrians standing on the sidewalk near the left edge, large potted palm tree positioned in the center of the sidewalk, yellow traffic cone located on the right side near the curb, red curb marking along the bottom edge of the frame",
+      "categories": [
+        "pedestrian",
+        "other",
+        "traffic_cone",
+        "other"
+      ],
+      "objects": [
+        {
+          "phrase": "group of four pedestrians standing on the sidewalk near the left edge",
+          "category": "pedestrian"
+        },
+        {
+          "phrase": "large potted palm tree positioned in the center of the sidewalk",
+          "category": "other"
+        },
+        {
+          "phrase": "yellow traffic cone located on the right side near the curb",
+          "category": "traffic_cone"
+        },
+        {
+          "phrase": "red curb marking along the bottom edge of the frame",
+          "category": "other"
+        }
+      ],
+      "token_count": 50,
+      "removed": [],
+      "format_normalization": "json_fence_removed",
+      "status": "ok",
+      "local_edits": [],
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"group of four pedestrians standing on the sidewalk near the left edge\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"large potted palm tree positioned in the center of the sidewalk\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"yellow traffic cone located on the right side near the curb\",\n      \"category\": \"traffic_cone\"\n    },\n    {\n      \"phrase\": \"red curb marking along the bottom edge of the frame\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"group of four pedestrians standing on the sidewalk near the left edge\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"large potted palm tree positioned in the center of the sidewalk\",\n      \"category\": \"other\"\n    },\n    {\n      \"phrase\": \"yellow traffic cone located on the right side near the curb\",\n      \"category\": \"traffic_cone\"\n    },\n    {\n      \"phrase\": \"red curb marking along the bottom edge of the frame\",\n      \"category\": \"other\"\n    }\n  ]\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 155,
+          "seconds": 4.570649496000442,
+          "question": "You are looking at the front-right camera image of a self-driving car.\nActive navigation command: [TURN LEFT].\n\nDescribe the CURRENT visible driving scene with informative English phrases.\nDo not merely list object names. EVERY phrase must describe appearance/type\nand position IN THE IMAGE. For road users, add their visible relationship to\na lane, intersection, crosswalk, curb, or road edge when clearly visible.\nFor example, \"white van\" is incomplete: describe where it is in this image\nand its visible road relationship. Do not invent objects or relationships.\n\nUse navigation intent to prioritize visible scene factors relevant to the route:\n- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,\n  crosswalks, and vehicles or pedestrians near that visible corridor.\n- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby\n  vehicles and pedestrians. A turn command does not prove a turn lane is visible.\n- UNKNOWN: describe the visible driving scene without assuming a route.\nNavigation is ego-relative; phrase locations are image-relative in ALL cameras.\nIf this view does not show the intended route, describe its local visible\nroad users and boundaries without inventing another camera's contents.\n\nInclude salient vehicles, pedestrians, cyclists, traffic lights/signs, lane\nlines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby\nroad users. Omit background buildings, trees, billboards, advertising, and decor.\nUse static appearance/location; preserve people and vehicles whose motion is\nunknown. Do not describe driving, walking, crossing, stopped, parked, ascending,\ndescending, or other inferred actions. Do not predict future movement or give\ndriving advice. Navigation is not evidence of signs, road geometry, or right of way.\nDo not use ahead, directly in front/behind, or ego-relative locations in output.\n\nAim for 50-80 English words across descriptive phrases for an informative view,\nfewer for a sparse view; at most 80 words. No fixed number of items. No repetition.\nNo bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"appearance and image position with visible road relationship\", \"category\": \"vehicle\"}]}\nThis illustrates the format only; choose objects and categories from the image.\nThe ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, other. Use \"other\" for road layout/markings and\ntraffic conditions. Do not invent categories. If nothing is reliable: {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.27.22_veh-26_03836_05047/CAM_R0/a49efa4fd7c75319.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "TURN LEFT"
+    }
+  }
+}

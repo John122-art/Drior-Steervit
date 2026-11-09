@@ -1,0 +1,28 @@
+</think>
+
+```json
+{
+  "objects": [
+    {
+      "phrase": "white sedan positioned on the left side of the road",
+      "category": "vehicle"
+    },
+    {
+      "phrase": "black bollards lining the edge of the driving lane",
+      "category": "barrier"
+    },
+    {
+      "phrase": "pedestrians standing near the building facade and railing",
+      "category": "pedestrian"
+    },
+    {
+      "phrase": "red triangular yield sign visible on the far left",
+      "category": "traffic_sign"
+    },
+    {
+      "phrase": "white lane marking line separating the driving path",
+      "category": "other"
+    }
+  ]
+}
+```

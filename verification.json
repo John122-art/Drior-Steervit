@@ -1,0 +1,19 @@
+{
+  "stage1": {
+    "scene_count": 65311,
+    "full_samples_exact_sha256": true,
+    "statistics_consistent": true
+  },
+  "stage2": {
+    "scene_count": 9200,
+    "full_samples_exact_sha256": true,
+    "statistics_consistent": true
+  },
+  "raw_outputs": 20,
+  "camera_samples_each": 5,
+  "montages": 10,
+  "html_embedded_images": 11,
+  "report_sections": 8,
+  "original_front_byte_identical": true,
+  "all_archived_code_sha256_matches": true
+}

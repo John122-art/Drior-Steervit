@@ -1,0 +1,19 @@
+{
+  "stage1_stage2_prepared_tokens": 85109,
+  "stage1_stage2_selected_logs": 978,
+  "navtest_reference_logs": 136,
+  "navtest_reference_tokens": 12146,
+  "native_val_logs_intersect_navtrain": 214,
+  "groups": {
+    "stage1": {
+      "logs_overlap_navtest": [],
+      "tokens_overlap_navtest": [],
+      "logs_overlap_native_val": []
+    },
+    "stage2": {
+      "logs_overlap_navtest": [],
+      "tokens_overlap_navtest": [],
+      "logs_overlap_native_val": []
+    }
+  }
+}
